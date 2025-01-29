@@ -12,12 +12,12 @@
   "keywords": [
     "bot",
     "Baileys",
-    "Alpha-Md",
+    "Dullah-Xmd",
     "whatsapp",
     "whatsapp-bot",
-    "keithkeizzah"
+    "Dullah"
    ],
-  "author": "keithkeizzah",
+  "author": "Dullah md",
 "license": "ISC",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
