@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="https://github.com/abdallahsalimjuma">
-    <img alt="Dulla xmd logo" height="200" src="https://files.catbox.moe/hegdag.jpg">
+    <img alt="DULLA-XMD logo" height="200" src="https://files.catbox.moe/hegdag.jpg">
   </a>
 </p>
   
@@ -55,14 +55,14 @@ href="https://wa.me/255716945971"><img title="Author" src="https://img.shields.i
 
 
 
-## HOW TO DEPLOY DULLAH MD V2🍃
+## HOW TO DEPLOY DULLAH XMD V2🍃
 
 
 ## 1.FIRST STEP 
-## Fork Dullah Md 💥 Repo
+## FORK MY 💥 REPO
 
 
-<a href= "https://github.com/abdallahsalimjuma/Dullah_Md/fork"><img title="Tap Here Open Session Site" src="https://img.shields.io/badge/FORK REPO-h?color=brown&style=for-the-badge&logo=msi" width="100" height="38.45"/></a></p>
+<a href= "https://github.com/abdallahsalimjuma/DULLAH-XMD/fork"><img title="Tap Here Open Session Site" src="https://img.shields.io/badge/FORK REPO-h?color=brown&style=for-the-badge&logo=msi" width="100" height="38.45"/></a></p>
 
 star✨ my repo bruh don't forget please🤖
 
@@ -72,11 +72,11 @@ star✨ my repo bruh don't forget please🤖
 
  GET SESSION ID BY
  
-<a href="https://session1-1.onrender.comqr"><img title="Tap Here Open Session Site" src="https://img.shields.io/badge/QR CODE-h?color=brown&style=for-the-badge&logo=msi" width="100" height="38.45"/></a></p>
+<a href="https://dullah-md-scanner.onrender.comqr"><img title="Tap Here Open Session Site" src="https://img.shields.io/badge/QR CODE-h?color=brown&style=for-the-badge&logo=msi" width="100" height="38.45"/></a></p>
 
 
  
-<a href="https://session1-1.onrender.com"><img title="Tap Here Open Session Site" src="https://img.shields.io/badge/PAIRING CODE-h?color=brown&style=for-the-badge&logo=msi" width="100" height="38.45"/></a></p>
+<a href="https://dullah-md-scanner.onrender.com"><img title="Tap Here Open Session Site" src="https://img.shields.io/badge/PAIRING CODE-h?color=brown&style=for-the-badge&logo=msi" width="100" height="38.45"/></a></p>
 
 
 ## 3.THIRD STEP 
