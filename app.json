@@ -1,5 +1,5 @@
 {
-  "name": "DULLAH-MD V2",
+  "name": "DULLAH-XMD V2",
   "description": "This BOT was developed by dullah.",
   "keywords": [
     "bot",
@@ -8,7 +8,7 @@
     "whatsapp"
   ],
   "logo": "https://files.catbox.moe/hegdag.jpg",
-  "repository": "https://github.com/fred1e/DULLAH-MD",
+  "repository": "https://github.com/abdallahsalimjuma/DULLAH-XMD",
   "succes_url": "/",
   "stack": "container",
   "env": {
