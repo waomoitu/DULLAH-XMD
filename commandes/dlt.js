@@ -2,7 +2,7 @@
 // Thanks chatgpt 😍😍
 // reach me before copy pasting it 255716945971
 
-const { keith } = require("../framework/zokou");
+const { zokou } = require("../framework/zokou");
 const axios = require("axios");
 
 zokou({ nomCom: "videologo", categorie: "modern-logo", reaction: "✋" }, async (dest, zk, commandeOptions) => {
@@ -30,7 +30,7 @@ zokou({ nomCom: "videologo", categorie: "modern-logo", reaction: "✋" }, async 
       externalAdReply: {
         title: "ᴅᴜʟʟᴀʜ xᴍᴅ",
         body: "Regards, Sir Dullah Xmd",
-        thumbnailUrl: "https://files.catbox.moe/ig9w4q.jpg",
+        thumbnailUrl: "https://files.catbox.moe/533oqh.jpg",
         sourceUrl: "https://chat.whatsapp.com/IdRXU9UcO8K50GPelOyhxh",
         mediaType: 1,
         renderLargerThumbnail: true,
