@@ -22,6 +22,18 @@
       "value": "yes",
       "required": false
     },
+    "DULLAH_CHATBOT":
+    {
+      "description":"Enter yes for your bot to audio chat to messages when offline ",
+      "value":"no",
+      "required":false
+    },
+    "CHATBOT":
+    {
+      "description":"Enter yes for your bot to auto reply message when offline",
+      "value":"no",
+      "required":false
+    },
    "AUTO_REACT":
     {
       "description":"Enter yes for your bot to auto react",
@@ -142,6 +154,16 @@
       "description": "Put yes if you want the bot to react to messages in private",
       "required": false,
       "value": "yes"
+      },
+      "ANTIDELETE2" : {
+    "description": "if you want to enable anti delete in conversation put yes else put no",
+    "value": "no",
+        "required": false
+ },
+  "ANTIDELETE1" : {
+    "description": "if you want to enable anti delete messages to be sent to your inbox put yes else put no",
+    "value": "no",
+        "required": false
     }
   },
   "formation": {
