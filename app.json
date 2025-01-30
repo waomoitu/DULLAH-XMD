@@ -1,5 +1,5 @@
 {
-  "name": "ᴅᴜʟʟᴀʜ-xᴍᴅ v²",
+  "name": "DULLAH XMD",
   "description": "This BOT was developed by dullah.",
   "keywords": [
     "bot",
@@ -75,7 +75,7 @@
     },
     "BOT_NAME": {
       "description": "put A name for your bot",
-      "value": "ᴅᴜʟʟᴀʜ-xᴍᴅ v²",
+      "value": "DULLAH XMD",
       "required": false
     },
     "BOT_MENU_LINKS": {
@@ -106,7 +106,7 @@
     "OWNER_NAME": {
       "desc": "Your Name",
       "required": false,
-      "value": "ᴅᴜʟʟᴀʜ-xᴍᴅ v²"
+      "value": "DULLAH XMD"
     },
     "NUMERO_OWNER": {
       "desc": "Your number , dont put '+' and put you area code(exemple of togo '228')",
