@@ -28,8 +28,8 @@ zokou({ nomCom: "videologo", categorie: "modern-logo", reaction: "✋" }, async 
     const contextInfo = {
       mentionedJid: [ms.sender], // Mention the sender
       externalAdReply: {
-        title: "DULLAH 𝗠𝗗",
-        body: "Regards, SirDullah",
+        title: "ᴅᴜʟʟᴀʜ xᴍᴅ",
+        body: "Regards, Sir Dullah Xmd",
         thumbnailUrl: "https://files.catbox.moe/ig9w4q.jpg",
         sourceUrl: "https://chat.whatsapp.com/IdRXU9UcO8K50GPelOyhxh",
         mediaType: 1,
@@ -80,7 +80,7 @@ zokou({ nomCom: "videologo", categorie: "modern-logo", reaction: "✋" }, async 
           await zk.sendMessage(dest, {
             video: { url: logoUrl },
             mimetype: "video/mp4",
-            caption: `*Downloaded by Alpha Md*`,
+            caption: `*Downloaded by ᴅᴜʟʟᴀʜ xᴍᴅ*`,
           }, { quoted: ms });
         }
       }
