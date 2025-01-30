@@ -22,7 +22,7 @@ zokou({ nomCom: "repo", catégorie:"Général", reaction: "✨", nomFichier: __f
       const lastUpdateDate = new Date(data.updated_at).toLocaleDateString('en-GB');
 
       const gitdata = `*hellow Friend
-this is* *ᴅᴜʟʟᴀʜ xᴍᴅ 👊.*\n *Join Group Chat* https://chat.whatsapp.com/IdRXU9UcO8K50GPelOyhxh
+this is* *ᴅᴜʟʟᴀʜ-xᴍᴅ v² 👊.*\n *Join Group Chat* https://chat.whatsapp.com/IdRXU9UcO8K50GPelOyhxh
 
 🗼 *REPOSITORY:* ${data.html_url}
 💫 *STARS:* ${repoInfo.stars}
@@ -30,10 +30,10 @@ this is* *ᴅᴜʟʟᴀʜ xᴍᴅ 👊.*\n *Join Group Chat* https://chat.whatsa
 📅 *RELEASE DATE:* ${releaseDate}
 🕐 *UPDATE ON:* ${repoInfo.lastUpdate}
 🙊 *OWNER:* *Mr Dullah*
-🍃 *THEME:* *ᴅᴜʟʟᴀʜ xᴍᴅ*
+🍃 *THEME:* *ᴅᴜʟʟᴀʜ-xᴍᴅ v²*
 🍷 *Am Safe To Fight In My Life*
 __________________________________
-            *Made With ᴅᴜʟʟᴀʜ xᴍᴅ*`;
+            *Made With ᴅᴜʟʟᴀʜ-xᴍᴅ v²*`;
 
       await zk.sendMessage(dest, { image: { url: img }, caption: gitdata });
     } else {
