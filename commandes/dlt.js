@@ -23,7 +23,7 @@ zokou({ nomCom: "videologo", categorie: "modern-logo", reaction: "✋" }, async 
 3 ➠ intro video 📷
 4 ➠ tiger 🐯 video logo
 
-*Enjoy 😂*`ᴅᴜʟʟᴀʜ-xᴍᴅ v²;
+*Enjoy 😂*`;
 
     const contextInfo = {
       mentionedJid: [ms.sender], // Mention the sender
