@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="https://github.com/abdallahsalimjuma">
-    <img alt="DULLA-XMD logo" height="200" src="https://files.catbox.moe/hegdag.jpg">
+    <img alt="DULLA-XMD logo" height="200" src="https://files.catbox.moe/533oqh.jpg">
   </a>
 </p>
   
@@ -102,11 +102,11 @@ _Termux Setup not recommended_
 
 <table>
   <tr>
-    <td>Crazy bot</td>
+    <td>dullah xmd</td>
     <td>Dullah md</td>
   </tr>
   <tr>
-    <td><a href="https://github.com/abdallahsalimjuma"><img src="https://files.catbox.moe/hlpfuu.jpg" width="180"</td>
+    <td><a href="https://github.com/abdallahsalimjuma"><img src="https://files.catbox.moe/533oqh.jpg" width="180"</td>
     <td><a href="https://github.com/abdallahsalimjuma"><img src="https://files.catbox.moe/hegdag.jpg" width="180"</td>
   </tr>
 </table 
