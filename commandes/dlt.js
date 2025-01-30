@@ -23,13 +23,13 @@ zokou({ nomCom: "videologo", categorie: "modern-logo", reaction: "✋" }, async 
 3 ➠ intro video 📷
 4 ➠ tiger 🐯 video logo
 
-*Enjoy 😂*`;
+*Enjoy 😂*`ᴅᴜʟʟᴀʜ-xᴍᴅ v²;
 
     const contextInfo = {
       mentionedJid: [ms.sender], // Mention the sender
       externalAdReply: {
-        title: "ᴅᴜʟʟᴀʜ xᴍᴅ",
-        body: "Regards, Sir Dullah Xmd",
+        title: "ᴅᴜʟʟᴀʜ-xᴍᴅ v²",
+        body: "Regards, ᴅᴜʟʟᴀʜ-xᴍᴅ v²",
         thumbnailUrl: "https://files.catbox.moe/533oqh.jpg",
         sourceUrl: "https://chat.whatsapp.com/IdRXU9UcO8K50GPelOyhxh",
         mediaType: 1,
