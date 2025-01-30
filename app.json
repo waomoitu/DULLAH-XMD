@@ -1,5 +1,5 @@
 {
-  "name": "DULLAH XMD",
+  "name": "ᴅᴜʟʟᴀʜ-xᴍᴅ v²",
   "description": "This BOT was developed by dullah.",
   "keywords": [
     "bot",
@@ -75,7 +75,7 @@
     },
     "BOT_NAME": {
       "description": "put A name for your bot",
-      "value": "DULLAH XMD",
+      "value": "ᴅᴜʟʟᴀʜ-xᴍᴅ v²",
       "required": false
     },
     "BOT_MENU_LINKS": {
