@@ -21,7 +21,7 @@ zokou({
       text: news,
       contextInfo: {
         externalAdReply: {
-          title: "ALPHA-MD TECH NEWS",
+          title: "ᴅᴜʟʟᴀʜ-xᴍᴅ v² TECH NEWS",
           body: "keep learning", 
           thumbnailUrl: thumbnail, 
           sourceUrl: conf.GURL, 
@@ -81,7 +81,7 @@ keith({
     
     const data = response.data;
     const messageText = `
-ᬑ *ALPHA HOLY BIBLE* ᬒ
+ᬑ *DULLAH HOLY BIBLE* ᬒ
 
 ⧭ *_WE'RE READING:_* ${data.reference}
 
@@ -98,7 +98,7 @@ keith({
       text: messageText,
       contextInfo: {
         externalAdReply: {
-          title: "ALPHA-MD HOLY BIBLE",
+          title: "ᴅᴜʟʟᴀʜ-xᴍᴅ v² HOLY BIBLE",
           body: `We're reading: ${data.reference}`,
           mediaType: 1,
           thumbnailUrl: "https://files.catbox.moe/zt9ie6.jpg", 
@@ -125,7 +125,7 @@ keith({
   }
 });
 
-keith({
+zokou({
   nomCom: "define",
   aliases: ["dictionary", "dict", "def"],
   reaction: '😁',
@@ -153,7 +153,7 @@ keith({
         text: definitionMessage,
         contextInfo: {
           externalAdReply: {
-            title: "ALPHA-MD DICTIONARY",
+            title: "ᴅᴜʟʟᴀʜ-xᴍᴅ v² DICTIONARY",
             body: `Definition of ${term}`,
             mediaType: 1,
             thumbnailUrl: "https://files.catbox.moe/28j7yx.jpg", 
@@ -172,61 +172,7 @@ keith({
   }
 });
 
-keith({
-  nomCom: "code",
-  aliases: ["session", "pair", "paircode", "qrcode"],
-  reaction: '🚀',
-  categorie: 'system'
-}, async (dest, zk, commandeOptions) => {
-  const { repondre, arg, ms } = commandeOptions;
-
-  if (!arg || arg.length === 0) {
-    const replyText = "Example Usage: .code 2541111xxxxx.";
-    return repondre(replyText);
-  }
-
-  try {
-    // Notify user that pairing is in progress
-    const replyText = "*Wait Alpha Md is getting your pair code 💧✅...*";
-    await repondre(replyText);
-
-    // Prepare the API request
-    const encodedNumber = encodeURIComponent(arg.join(" "));
-    const apiUrl = `https://keith-sessions-pi5z.onrender.com/code?number=${encodedNumber}`;
-
-    // Fetch the pairing code from the API
-    const response = await axios.get(apiUrl);
-    const data = response.data;
-
-    if (data && data.code) {
-      const pairingCode = data.code;
-      await zk.sendMessage(dest, {
-        text: pairingCode,
-        contextInfo: {
-          externalAdReply: {
-            title: "ALPHA-MD PAIR CODE",
-            body: "Here is your pairing code:",
-            mediaType: 1,
-            thumbnailUrl: conf.URL, 
-            sourceUrl: conf.GURL,
-            showAdAttribution: true, 
-          },
-        },
-      }, { quoted: ms });
-
-      const secondReplyText = "Here is your pair code, copy and paste it to the notification above or link devices.";
-      await repondre(secondReplyText);
-    } else {
-      throw new Error("Invalid response from API.");
-    }
-  } catch (error) {
-    console.error("Error getting API response:", error.message);
-    const replyText = "Error getting response from API.";
-    repondre(replyText);
-  }
-});
-
-keith({
+zokou({
   nomCom: "element",
   reaction: '📓',
   categorie: "search"
@@ -249,7 +195,7 @@ keith({
     const thumb = data.image; // Assuming the API returns an 'image' property for the element thumbnail
 
     const formattedMessage = `
-*Alpha Md Element Information:*
+*Dullah Md Element Information:*
 🚀 *Name:* ${data.name}
 🚀 *Symbol:* ${data.symbol}
 🚀 *Atomic Number:* ${data.atomic_number}
@@ -265,7 +211,7 @@ Regards ${conf.BOT} `;
       text: formattedMessage,
       contextInfo: {
         externalAdReply: {
-          title: "ALPHA-MD ELEMENT INFORMATION",
+          title: "ᴅᴜʟʟᴀʜ-xᴍᴅ v² ELEMENT INFORMATION",
           body: "Here is the information you requested:",
           mediaType: 1,
           thumbnailUrl: thumb,
@@ -281,7 +227,7 @@ Regards ${conf.BOT} `;
   }
 });
 
-keith({
+zokou({
   nomCom: "github",
   aliases: ["git"],
   reaction: '💻',
@@ -291,7 +237,7 @@ keith({
   const githubUsername = arg.join(" ");
 
   if (!githubUsername) {
-    return repondre("Give me a valid GitHub username like: github keithkeizzah");
+    return repondre("Give me a valid GitHub username like: github abdallahsalimjuma");
   }
 
   try {
@@ -324,7 +270,7 @@ keith({
       text: githubMessage,
       contextInfo: {
         externalAdReply: {
-          title: "ALPHA-MD GITHUB USER INFO",
+          title: "ᴅᴜʟʟᴀʜ-xᴍᴅ v² GITHUB USER INFO",
           body: `Information about ${data.login}`,
           mediaType: 1,
           thumbnailUrl: thumb,
@@ -467,7 +413,7 @@ keith({
 
 🔗 *URL*: ${con.content_urls.mobile.page}
 
-> Powered by Alpha Md
+> Powered by ᴅᴜʟʟᴀʜ-xᴍᴅ v²
     `;
     repondre(texa);
   } catch (err) {
