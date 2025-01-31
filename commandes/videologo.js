@@ -1,37 +1,37 @@
- this is my shit 💀 lemme not find it in your project 
+// this is my shit 💀 lemme not find it in your project 
 // Thanks chatgpt 😍😍
 // reach me before copy pasting it 255716945971
 
-const { zokou } = require("../framework/zokou");
+const { keith } = require("../framework/zokou");
 const axios = require("axios");
 
-zokou({ nomCom: "videologo", categorie: "Fledi-logo", reaction: "🔖" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "videologo", categorie: "modern-logo", reaction: "✋" }, async (dest, zk, commandeOptions) => {
   const { ms, repondre, arg } = commandeOptions;
   const text = arg.join(" ");
 
   if (!text) {
-    repondre("🤦Please provide a search thing.");
+    repondre("Please provide a search query.");
     return;
   }
 
   try {
     // Message content
-    const messageText = `😁Reply with below alphabet to generate *${text}* logo
+    const messageText = `Reply with below numbers to generate *${text}* logo
 
-1 ☞ sweet love 💞😻
-2 ☞ lightning pubg🕯️
-3 ☞ intro video 🎬
-4 ☞ tiger 🐯 video logo
+1 ➠ sweet love 💕😘
+2 ➠ lightning pubg
+3 ➠ intro video 📷
+4 ➠ tiger 🐯 video logo
 
-*Enjoy 🤔*`;
+*Enjoy 😂*`;
 
     const contextInfo = {
       mentionedJid: [ms.sender], // Mention the sender
       externalAdReply: {
-        title: "ᴅᴜʟʟᴀʜ-xᴍᴅ v²",
-        body: "Pambe Kwa, Frediezra",
-        thumbnailUrl: "https://files.catbox.moe/7irwqn.jpeg",
-        sourceUrl: "https://whatsapp.com/channel/0029VaihcQv84Om8LP59fO3f",
+        title: "DULLAH 𝗠𝗗",
+        body: "Regards, SirDullah",
+        thumbnailUrl: "https://files.catbox.moe/ig9w4q.jpg",
+        sourceUrl: "https://chat.whatsapp.com/IdRXU9UcO8K50GPelOyhxh",
         mediaType: 1,
         renderLargerThumbnail: true,
       },
@@ -54,25 +54,25 @@ zokou({ nomCom: "videologo", categorie: "Fledi-logo", reaction: "🔖" }, async 
 
       const responseText = message.message.extendedTextMessage.text.trim();
       if (message.message.extendedTextMessage.contextInfo && message.message.extendedTextMessage.contextInfo.stanzaId === sentMessage.key.id) {
-        // Handle different logo choices based on alphabet
+        // Handle different logo choices based on number
         let logoUrl;
         switch (responseText) {
-          case 'A':
+          case '1':
             logoUrl = await fetchLogoUrl("https://en.ephoto360.com/create-sweet-love-video-cards-online-734.html", text);
             break;
-          case 'B':
+          case '2':
             logoUrl = await fetchLogoUrl("https://en.ephoto360.com/lightning-pubg-video-logo-maker-online-615.html", text);
             break;
-          case 'C':
+          case '3':
             logoUrl = await fetchLogoUrl("https://en.ephoto360.com/free-logo-intro-video-maker-online-558.html", text);
             break;
-          case 'D':
+          case '4':
             logoUrl = await fetchLogoUrl("https://en.ephoto360.com/create-digital-tiger-logo-video-effect-723.html", text);
             break;
-
+          
           // Add additional cases as required
           default:
-            return repondre("🚫*_Invalid alphabet. Please reply with a valid alphabet._*");
+            return repondre("*_Invalid number. Please reply with a valid number._*");
         }
 
         // Send the logo if URL is found
@@ -80,7 +80,7 @@ zokou({ nomCom: "videologo", categorie: "Fledi-logo", reaction: "🔖" }, async 
           await zk.sendMessage(dest, {
             video: { url: logoUrl },
             mimetype: "video/mp4",
-            caption: `> *Downloaded by Dullah Planet*`,
+            caption: `*Downloaded by Alpha Md*`,
           }, { quoted: ms });
         }
       }
@@ -99,7 +99,7 @@ const fetchLogoUrl = async (url, name) => {
     });
     return response.data.result.download_url; // Ensure this is the correct path for the download URL in the API response
   } catch (error) {
-    console.error("❌Error fetching logo:", error);
+    console.error("Error fetching logo:", error);
     return null;
   }
-}
+};
