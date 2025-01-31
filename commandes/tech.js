@@ -39,7 +39,7 @@ zokou({
 
 
 zokou({
-  nomCom: "bible",
+  nomCom: "bible2",
   reaction: '🎎',
   categorie: "search"
 }, async (dest, zk, commandeOptions) => {
