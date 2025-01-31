@@ -29,7 +29,7 @@ zokou({ nomCom: "videologo", categorie: "modern-logo", reaction: "✋" }, async 
       mentionedJid: [ms.sender], // Mention the sender
       externalAdReply: {
         title: "ᴅᴜʟʟᴀʜ-xᴍᴅ v²",
-        body: "Regards, Dullah Xmd",
+        body: "Regards, ᴅᴜʟʟᴀʜ-xᴍᴅ v²",
         thumbnailUrl: "https://files.catbox.moe/533oqh.jpg",
         sourceUrl: "https://chat.whatsapp.com/IdRXU9UcO8K50GPelOyhxh",
         mediaType: 1,
@@ -80,7 +80,7 @@ zokou({ nomCom: "videologo", categorie: "modern-logo", reaction: "✋" }, async 
           await zk.sendMessage(dest, {
             video: { url: logoUrl },
             mimetype: "video/mp4",
-            caption: `*Downloaded by Dullah Xmd*`,
+            caption: `*Downloaded by ᴅᴜʟʟᴀʜ-xᴍᴅ v²*`,
           }, { quoted: ms });
         }
       }
