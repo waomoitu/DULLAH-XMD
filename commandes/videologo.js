@@ -2,7 +2,7 @@
 // Thanks chatgpt 😍😍
 // reach me before copy pasting it 255716945971
 
-const { keith } = require("../framework/zokou");
+const { zokou } = require("../framework/zokou");
 const axios = require("axios");
 
 zokou({ nomCom: "videologo", categorie: "modern-logo", reaction: "✋" }, async (dest, zk, commandeOptions) => {
@@ -28,9 +28,9 @@ zokou({ nomCom: "videologo", categorie: "modern-logo", reaction: "✋" }, async 
     const contextInfo = {
       mentionedJid: [ms.sender], // Mention the sender
       externalAdReply: {
-        title: "DULLAH 𝗠𝗗",
-        body: "Regards, SirDullah",
-        thumbnailUrl: "https://files.catbox.moe/ig9w4q.jpg",
+        title: "ᴅᴜʟʟᴀʜ-xᴍᴅ v²",
+        body: "Regards, Dullah Xmd",
+        thumbnailUrl: "https://files.catbox.moe/533oqh.jpg",
         sourceUrl: "https://chat.whatsapp.com/IdRXU9UcO8K50GPelOyhxh",
         mediaType: 1,
         renderLargerThumbnail: true,
@@ -80,7 +80,7 @@ zokou({ nomCom: "videologo", categorie: "modern-logo", reaction: "✋" }, async 
           await zk.sendMessage(dest, {
             video: { url: logoUrl },
             mimetype: "video/mp4",
-            caption: `*Downloaded by Alpha Md*`,
+            caption: `*Downloaded by Dullah Xmd*`,
           }, { quoted: ms });
         }
       }
