@@ -38,7 +38,7 @@ zokou({
 });
 
 
-keith({
+zokou({
   nomCom: "bible",
   reaction: '🎎',
   categorie: "search"
@@ -52,7 +52,7 @@ keith({
         externalAdReply: {
           title: "Bible Reference Required",
           body: "Please provide a book, chapter, and verse.",
-          thumbnailUrl: "https://files.catbox.moe/zt9ie6.jpg", // Replace with a suitable thumbnail URL
+          thumbnailUrl: "https://files.catbox.moe/533oqh.jpg", // Replace with a suitable thumbnail URL
           sourceUrl: conf.GURL,
           mediaType: 1,
           showAdAttribution: true,
@@ -70,7 +70,7 @@ keith({
           externalAdReply: {
             title: "Invalid Bible Reference",
             body: "Please provide a valid book, chapter, and verse.",
-            thumbnailUrl: "https://files.catbox.moe/zt9ie6.jpg", // Replace with a suitable thumbnail URL
+            thumbnailUrl: "https://files.catbox.moe/533oqh.jpg", // Replace with a suitable thumbnail URL
             sourceUrl: conf.GURL,
             mediaType: 1,
             showAdAttribution: true,
@@ -101,7 +101,7 @@ keith({
           title: "ᴅᴜʟʟᴀʜ-xᴍᴅ v² HOLY BIBLE",
           body: `We're reading: ${data.reference}`,
           mediaType: 1,
-          thumbnailUrl: "https://files.catbox.moe/zt9ie6.jpg", 
+          thumbnailUrl: "https://files.catbox.moe/533oqh.jpg", 
           sourceUrl: conf.GURL,
           showAdAttribution: true, 
         },
@@ -115,7 +115,7 @@ keith({
         externalAdReply: {
           title: "Error Fetching Bible Passage",
           body: "Please try again later.",
-          thumbnailUrl: "https://files.catbox.moe/zt9ie6.jpg", // Replace with a suitable thumbnail URL
+          thumbnailUrl: "https://files.catbox.moe/533oqh.jpg", // Replace with a suitable thumbnail URL
           sourceUrl: conf.GURL,
           mediaType: 1,
           showAdAttribution: true,
@@ -156,7 +156,7 @@ zokou({
             title: "ᴅᴜʟʟᴀʜ-xᴍᴅ v² DICTIONARY",
             body: `Definition of ${term}`,
             mediaType: 1,
-            thumbnailUrl: "https://files.catbox.moe/28j7yx.jpg", 
+            thumbnailUrl: "https://files.catbox.moe/533oqh.jpg", 
             sourceUrl: conf.GURL,
             showAdAttribution: true, 
           },
@@ -286,7 +286,7 @@ zokou({
   }
 });
 
-keith({
+zokou({
   nomCom: "tempmail",
   aliases: ['mail', 'temp'],
   reaction: '📧',
@@ -384,7 +384,7 @@ You can use this email for temporary purposes. I will notify you if you receive 
     }, { quoted: messageQuote });
   }
 });
-keith({
+zokou({
   nomCom: "wiki",
   aliases: ["wikipedia", "wikipeda"],
   reaction: '⚔️',
