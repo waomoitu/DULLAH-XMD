@@ -18,12 +18,12 @@ zokou({ nomCom: "videologo", categorie: "Fledi-logo", reaction: "🔖" }, async 
     // Message content
     const messageText = `😁Reply with below alphabet to generate *${text}* logo
 
-A ☞ sweet love 💞😻
-B ☞ lightning pubg🕯️
-C ☞ intro video 🎬
-D ☞ tiger 🐯 video logo
+1 ☞ sweet love 💞😻
+2 ☞ lightning pubg🕯️
+3 ☞ intro video 🎬
+4 ☞ tiger 🐯 video logo
 
-*Enjoy 🔮*`;
+*Enjoy 🤔*`;
 
     const contextInfo = {
       mentionedJid: [ms.sender], // Mention the sender
