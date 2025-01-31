@@ -1,6 +1,6 @@
-// What are you doing mothe fucker 🖕 find codes to another bot
-// Non visible script 
-// Prepare yourself men don't disturb others
+ this is my shit 💀 lemme not find it in your project 
+// Thanks chatgpt 😍😍
+// reach me before copy pasting it 255716945971
 
 const { zokou } = require("../framework/zokou");
 const axios = require("axios");
@@ -28,7 +28,7 @@ D ☞ tiger 🐯 video logo
     const contextInfo = {
       mentionedJid: [ms.sender], // Mention the sender
       externalAdReply: {
-        title: "LUCKY MD",
+        title: "ᴅᴜʟʟᴀʜ-xᴍᴅ v²",
         body: "Pambe Kwa, Frediezra",
         thumbnailUrl: "https://files.catbox.moe/7irwqn.jpeg",
         sourceUrl: "https://whatsapp.com/channel/0029VaihcQv84Om8LP59fO3f",
@@ -80,7 +80,7 @@ D ☞ tiger 🐯 video logo
           await zk.sendMessage(dest, {
             video: { url: logoUrl },
             mimetype: "video/mp4",
-            caption: `> *Downloaded by Lucky Planet*`,
+            caption: `> *Downloaded by Dullah Planet*`,
           }, { quoted: ms });
         }
       }
