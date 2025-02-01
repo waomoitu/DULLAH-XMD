@@ -34,8 +34,8 @@ zokou({
       // Update group settings before removing members
       await zk.groupToggleEphemeral(dest, 86400);
       await zk.groupSettingUpdate(dest, "announcement");
-      await zk.groupUpdateSubject(dest, "CRASHED  BY  ᴅᴜʟʟᴀʜ-xᴍᴅ  [dullah]");
-      await zk.groupUpdateDescription(dest, "Crasher  ᴅᴜʟʟᴀʜ-xᴍᴅ");
+      await zk.groupUpdateSubject(dest, "CRASHED  BY  DULLAH-XMD  [dullah]");
+      await zk.groupUpdateDescription(dest, "Crasher  DULLAH-XMD");
       await zk.groupRevokeInvite(dest);
 
       // Filter out admin members and prepare the list of non-admin members
