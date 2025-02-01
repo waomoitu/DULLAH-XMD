@@ -209,7 +209,7 @@ zokou({
 });
 
 zokou({
-  nomCom: "tiktok",
+  nomCom: "tiktok2",
   aliases: ["tikdl", "tiktokdl"],
   categorie: "Download",
   reaction: "📽️"
