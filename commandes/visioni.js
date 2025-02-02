@@ -1,6 +1,6 @@
 
 const { zokou } = require("../framework/zokou");
-const { uploadtoimgur } = require("../zokou/imgur"); // Ensure this path and export are correct
+const { uploadtoimgur } = require("../framework/zokou"); // Ensure this path and export are correct
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 const axios = require("axios");
 
