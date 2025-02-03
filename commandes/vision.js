@@ -25,7 +25,7 @@ keith({
         }
 
         // Acknowledge image receipt and instruction
-        await repondre("_A moment, alpha md is analyzing contents of the image..._");
+        await repondre("_A moment, dullah md is analyzing contents of the image..._");
 
         // Download and save the image
         const fdr = await zk.downloadAndSaveMediaMessage(msgRepondu.imageMessage);
