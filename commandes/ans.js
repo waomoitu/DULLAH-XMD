@@ -169,4 +169,4 @@ zokou({ nomCom: "gpt", reaction: "✔️", categorie: "IA" }, async (dest, zk, c
 
 
   
-￼Enter
+
