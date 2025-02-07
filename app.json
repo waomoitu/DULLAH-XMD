@@ -100,7 +100,7 @@
       "value": "yes",
       "required": false 
     },
-    "HEROKU_APY_KEY": {
+    "HEROKU_API_KEY": {
       "description": "insert your heroku api-key (OPTIONAL)",
       "value" : "", 
       "required": false
