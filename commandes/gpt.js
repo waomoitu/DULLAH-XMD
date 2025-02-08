@@ -24,8 +24,8 @@ zokou({
 
   // Define the model and the user/system message
   const model = 'gpt-4-turbo-2024-04-09';
-  const userMessage = { role: 'user', content: lucky };  // Change 'text' to 'lucky' as it's the user input
-  const systemMessage = { role: 'system', content: 'You are an assistant in WhatsApp. You are called Fredie. You respond to user commands.' };
+  const userMessage = { role: 'user', content: dullah };  // Change 'text' to 'dullah' as it's the user input
+  const systemMessage = { role: 'system', content: 'You are an assistant in WhatsApp. You are called Dullah. You respond to user commands.' };
 
   // Add user input to the conversation data
   conversationData.push(userMessage);
