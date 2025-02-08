@@ -1,9 +1,9 @@
-const { ezra } = require("../fredi/ezra");
+const { zokou } = require("../fremawork/zokou");
 const fs = require('fs');
 const ai = require('unlimited-ai');
 
-ezra({
-  nomCom: "gpt",
+zokou({
+  nomCom: "gpt1",
   aliases: ["gpt4.1"],
   reaction: '🤦',
   categorie: "search"
