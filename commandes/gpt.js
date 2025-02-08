@@ -1,4 +1,4 @@
-const { zokou } = require("../fremawork/zokou");
+const { zokou } = require("../framework/zokou");
 const fs = require('fs');
 const ai = require('unlimited-ai');
 
