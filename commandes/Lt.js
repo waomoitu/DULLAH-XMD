@@ -29,7 +29,7 @@ zokou({
     const { respond, prefix, nomAuteurMessage } = context;
     const commands = require(__dirname + "/../framework/zokou").cm;
 
-    let menu = 'ᴀʟᴘʜᴀ ᴍᴅ ʟɪsᴛ\n\n';
+    let menu = 'ᴅᴜʟʟᴀʜ-xᴍᴅ v² ʟɪsᴛ\n\n';
     let keithList = [];
 
     // Loop through all commands to fetch the relevant information (commands, description, and aliases)
@@ -59,10 +59,10 @@ zokou({
         text: menu,
         contextInfo: {
             externalAdReply: {
-                title: "𝗔𝗟𝗣𝗛𝗔-𝗠𝗗",
-                body: "𝐫𝐞𝐠𝐚𝐫𝐝𝐬 𝐊𝐞𝐢𝐭𝐡𝐤𝐞𝐢𝐳𝐳𝐚𝐡",
+                title: "ᴅᴜʟʟᴀʜ-xᴍᴅ v²",
+                body: "𝐫𝐞𝐠𝐚𝐫𝐝𝐬 ᴅᴜʟʟᴀʜ-xᴍᴅ",
                 thumbnailUrl: "https://files.catbox.moe/533oqh.jpg",
-                sourceUrl: "https://whatsapp.com/channel/0029Vaan9TF9Bb62l8wpoD47",
+                sourceUrl: "https://chat.whatsapp.com/IdRXU9UcO8K50GPelOyhxh",
                 mediaType: 1,
                 renderLargerThumbnail: true
             }
