@@ -2,7 +2,7 @@ const {
     zokou,
     tlang,
     prefix,
-     } = require('../lib')
+     } = require('../framework/zokou')
 zokou({
     nomCom: "getall",
     desc: "get jid of all members of groups/pm chats/all groups.",
