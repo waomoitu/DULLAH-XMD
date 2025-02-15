@@ -145,12 +145,17 @@ The WhatsApp Bot Dullah MD💫 is released under the [MIT License](https://opens
 ## DEVELOPERS :
          `don't change here`
 - [**DULLAH SIR**](https://github.com/abdallahsalimjuma)
-- [**DULLAH MD**](https://github.com/DULLAH_MD)
-- [** FRECYBER TECH**](https://github.com/Frecyber)
+- [**DULLAH MD**](https://github.com/DULLAH_XMD)
+- [** SIR DULLAH TECH**](https://github.com/Frecyber)
 - [**Developers WA Group**](https://chat.whatsapp.com/CP2BirU5pBj04cXXgEbfuv)
 - [**Developers YouTube**](https://youtube.com/@herokuplatform)
  <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
  
+
+<img alt="Development" width="250" src="https://media2.giphy.com/media/W9tBvzTXkQopi/giphy.gif?cid=6c09b952xu6syi1fyqfyc04wcfk0qvqe8fd7sop136zxfjyn&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g" /> </p>
+<a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+
+
 ★EVERYTHING SAY THANK YOU TO GOD. ©
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
