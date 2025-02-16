@@ -1,4 +1,4 @@
-const { zokou, tlang, prefix } = require('../lib');
+const {zokou} = require('../framework/zokou');
 
 zokou({
     nomCom: "getall",
