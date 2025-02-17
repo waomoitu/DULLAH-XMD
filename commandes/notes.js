@@ -1,5 +1,5 @@
 const { zokou } = require('../framework/zokou');
-const note = require('../framework/note');
+const note = require('../lib/note');
 
 //---------------------------------------------------------------------------
 // Delete a note by ID
