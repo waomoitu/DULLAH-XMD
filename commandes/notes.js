@@ -1,5 +1,5 @@
-const { zokou, prefix } = require('../lib');
-const note = require('../lib/note');
+const { zokou } = require('../framework/zokou');
+const note = require('../framework/note');
 
 //---------------------------------------------------------------------------
 // Delete a note by ID
