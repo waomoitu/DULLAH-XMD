@@ -1,5 +1,5 @@
-const { ezra } = require('../fredi/ezra');
 
+const { zokou } = require('../framework/zokou');
 
  zokou({
    nomCom: "hrt",
