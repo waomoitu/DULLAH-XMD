@@ -16,7 +16,7 @@ async function fetchData(url) {
 
 // Fetch latest forex news
 zokou({
-  name: "forex1",
+  nomCom: "forex1",
   reaction: "📈",
   category: "forex",
   desc: "Fetches the latest forex news"
@@ -42,7 +42,7 @@ zokou({
 
 // Fetch forex market status
 zokou({
-  name: "fxstatus",
+  nomCom: "fxstatus",
   reaction: "📊",
   category: "forex",
   desc: "Fetches the current status of the forex market"
@@ -64,7 +64,7 @@ zokou({
 
 // Fetch active forex currency pairs
 zokou({
-  name: "fxpairs",
+  nomCom: "fxpairs",
   reaction: "💹",
   category: "forex",
   desc: "Fetches a list of active forex currency pairs"
@@ -84,7 +84,7 @@ zokou({
 
 // Fetch forex exchange rates
 zokou({
-  name: "fxexchange",
+  nomCom: "fxexchange",
   reaction: "💲",
   category: "forex",
   desc: "Fetches the latest foreign exchange rates against the US Dollar",
@@ -111,7 +111,7 @@ zokou({
 
 // Fetch active stock tickers
 zokou({
-  name: "stocktickers",
+  nomCom: "stocktickers",
   reaction: "📈",
   category: "stocks",
   desc: "Fetches a list of active stock tickers",
