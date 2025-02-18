@@ -1,6 +1,14 @@
-const { zokou } = require('../framework/zokou');
-const axios = require("axios")
-zokou({
+
+const { zokou } = require("../framework/zokou")
+//const { getGroupe } = require("../bdd/groupe")
+const { Sticker, StickerTypes } = require('wa-sticker-formatter');
+const {ajouterOuMettreAJourJid,mettreAJourAction,verifierEtatJid} = require("../bdd/antilien")
+const {atbajouterOuMettreAJourJid,atbverifierEtatJid} = require("../bdd/antibot")
+const { search, download } = require("aptoide-scraper");
+const fs = require("fs-extra");
+const conf = require("../set");
+const { default: axios } = require('axios');
+//const { uploadImageToImgur } = require('../framework/zokou');
     nomCom: "getall",
     categorie: "owner",
     reaction: "📜",
