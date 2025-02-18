@@ -3,6 +3,7 @@ const { zokou } = require("../framework/zokou");
 zokou(
   {
     nomCom: "fakereply",
+    reaction: "🕷️",
     alias: ["freply"],
     categorie: "general",
     desc: "Create a fake reply using the given text!",
