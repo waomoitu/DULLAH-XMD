@@ -7,8 +7,6 @@ zokou(
     alias: ["freply"],
     categorie: "general",
     desc: "Create a fake reply using the given text!",
-    utilisation: "text | reply_text | number | type(text,order,contact,image,video)",
-    cooldown: 5,
   },
   async (dest, zk, commandeOptions) => {
     try {
