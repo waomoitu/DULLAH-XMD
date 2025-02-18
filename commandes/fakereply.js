@@ -27,7 +27,7 @@ zokou(
         type = args[3] && types.includes(args[3]) ? args[3] : "text";
 
       let charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-        smds = "SMD";
+        cmds = "CMD";
       for (let i = 0; i < 13; i++) {
         smds += charset[Math.floor(Math.random() * charset.length)];
       }
