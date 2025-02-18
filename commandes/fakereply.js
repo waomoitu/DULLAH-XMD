@@ -1,7 +1,7 @@
 const { zokou } = require("../framework/zokou");
 
-zokou(
-  {
+zokou({
+  
     nomCom: "fakereply",
     reaction: "🕷️",
     alias: ["freply"],
