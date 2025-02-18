@@ -18,7 +18,7 @@ zokou({
   reaction: "😞",
   category: "forex",
   desc: "Fetches the latest forex news"
-}, async (message) => {
+}, async (dest, zk, commandeOptions) => {
   const apiUrl = "https://api.polygon.io/v2/reference/news?apiKey=Y4iTYoJANwppB8I3Bm4QVWdV5oXlvc45";
   const data = await fetchData(apiUrl);
 
@@ -44,7 +44,7 @@ zokou({
   reaction: "😞",
   category: "forex",
   desc: "Fetches the current status of the forex market"
-}, async (message) => {
+}, async (dest, zk, commandeOptions) => {
   const apiUrl = "https://api.polygon.io/v1/marketstatus/now?apiKey=Y4iTYoJANwppB8I3Bm4QVWdV5oXlvc45";
   const data = await fetchData(apiUrl);
 
@@ -66,7 +66,7 @@ zokou({
   reaction: "😞",
   category: "forex",
   desc: "Fetches a list of active forex currency pairs"
-}, async (message) => {
+}, async (dest, zk, commandeOptions) => {
   const apiUrl = "https://api.polygon.io/v3/reference/tickers?market=fx&active=true&apiKey=Y4iTYoJANwppB8I3Bm4QVWdV5oXlvc45";
   const data = await fetchData(apiUrl);
 
@@ -87,7 +87,7 @@ zokou({
   category: "forex",
   desc: "Fetches the latest foreign exchange rates against the US Dollar",
   usage: "fxexchange [currency_code]"
-}, async (message, args) => {
+}, async (dest, zk, commandeOptions) => {
   const currencyCode = (args[0] || "USD").toUpperCase();
   const apiUrl = `https://api.exchangerate-api.com/v4/latest/${currencyCode}`;
   const data = await fetchData(apiUrl);
@@ -113,7 +113,7 @@ zokou({
   category: "stocks",
   desc: "Fetches a list of active stock tickers",
   usage: "stocktickers [limit]"
-}, async (message, args) => {
+}, async (dest, zk, commandeOptions) => {
   const limit = Math.min(parseInt(args[0]) || 10, 50); // Limit between 1 and 50
   const apiUrl = `https://api.polygon.io/v3/reference/tickers?active=true&limit=${limit}&apiKey=Y4iTYoJANwppB8I3Bm4QVWdV5oXlvc45`;
   const data = await fetchData(apiUrl);
