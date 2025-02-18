@@ -29,7 +29,7 @@ zokou(
       let charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
         cmds = "CMD";
       for (let i = 0; i < 13; i++) {
-        smds += charset[Math.floor(Math.random() * charset.length)];
+        cmds += charset[Math.floor(Math.random() * charset.length)];
       }
 
       let fak = await zk.fakeMessage(
