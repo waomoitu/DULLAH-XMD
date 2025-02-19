@@ -1,10 +1,11 @@
 const {
    zokou
-} = require('../framework/zokou')
+} = require('../framework/zokou");
+
 zokou({
    nomCom: "dog",
-   reaction: "🤔",
-  categories: "misc",
+   categorie: "fun",
+   reaction: "🙄",
    desc: "Send videos of randome dogs!
    filename: __filename,
 },
