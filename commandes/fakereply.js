@@ -1,6 +1,6 @@
 const { zokou, prefix } = require('../framework');
 
-zokou.cmd({
+zokou({
     nomCom: "fakereply",
     alias: ["freply"],
     desc: "Create a fake reply using the given texts!",
