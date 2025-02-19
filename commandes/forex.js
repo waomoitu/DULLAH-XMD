@@ -46,7 +46,7 @@ zokou({
   reaction: "📊",
   category: "forex",
   desc: "Fetches the current status of the forex market"
-}, async (dest, zk) => {
+}, async (dest, zk, commandeOptions) => {
   const apiUrl = `https://api.polygon.io/v1/marketstatus/now?apiKey=${process.env.POLYGON_API_KEY}`;
   const data = await fetchData(apiUrl);
 
@@ -68,7 +68,7 @@ zokou({
   reaction: "💹",
   category: "forex",
   desc: "Fetches a list of active forex currency pairs"
-}, async (dest, zk) => {
+}, async (dest, zk, commandeOptions) => {
   const apiUrl = `https://api.polygon.io/v3/reference/tickers?market=fx&active=true&apiKey=${process.env.POLYGON_API_KEY}`;
   const data = await fetchData(apiUrl);
 
