@@ -1,4 +1,4 @@
-const { zokou, prefix } = require('../framework');
+const { zokou } = require('../framework/zokou");
 
 zokou({
     nomCom: "fakereply",
