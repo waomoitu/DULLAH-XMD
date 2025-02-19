@@ -1,10 +1,10 @@
 const { zokou, prefix } = require('../framework');
 
-zokou.cmd({
+zokou({
     nomCom: "fakereply",
     alias: ["freply"],
     desc: "Create a fake reply using the given texts!",
-    categorie: "General",  // Correct category formatting
+    categorie: "General",  
     utilisation: "msg | reply_text | number | type",
     public: true,
 }, async (dest, zk, { quoted, args }) => {
