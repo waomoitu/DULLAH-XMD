@@ -1,6 +1,6 @@
 const { zokou, prefix } = require('../framework');
 
-zokou.cmd({
+zokou({
     nomCom: "testmessage",
     alias: ["tmsg"],
     desc: "Test if bot can send messages",
