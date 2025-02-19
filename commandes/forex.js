@@ -1,6 +1,6 @@
 const { zokou } = require("../framework/zokou");
 const fetch = require("node-fetch");
-require("dotenv").config(); // Load API keys from .env
+
 
 // Helper function to fetch data from API
 async function fetchData(url) {
