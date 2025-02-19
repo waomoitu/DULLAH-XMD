@@ -3,7 +3,7 @@ const { zokou, prefix } = require('../framework');
 zokou({
     nomCom: "testmessage",
     reaction: "🤦",
-      categorie: "General",
+    categorie: "General",
     aliases: ["tmsg"],
     desc: "Test if bot can send messages",
     public: true,
