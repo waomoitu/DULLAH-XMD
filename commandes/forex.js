@@ -43,7 +43,6 @@ zokou({
 // Fetch forex market status
 zokou({
   nomCom: "fxstatus",
-  reaction: "📊",
   category: "forex",
   desc: "Fetches the current status of the forex market"
 }, async (dest, zk, commandeOptions) => {
@@ -64,8 +63,7 @@ zokou({
 
 // Fetch active forex currency pairs
 zokou({
-  nomCom: "fxpairs",
-  reaction: "💹",
+  nomCom: "fxpairs"
   category: "forex",
   desc: "Fetches a list of active forex currency pairs"
 }, async (dest, zk, commandeOptions) => {
@@ -85,7 +83,6 @@ zokou({
 // Fetch forex exchange rates
 zokou({
   nomCom: "fxexchange",
-  reaction: "💲",
   category: "forex",
   desc: "Fetches the latest foreign exchange rates against the US Dollar",
   usage: "fxexchange [currency_code]"
@@ -112,7 +109,6 @@ zokou({
 // Fetch active stock tickers
 zokou({
   nomCom: "stocktickers",
-  reaction: "📈",
   category: "stocks",
   desc: "Fetches a list of active stock tickers",
   usage: "stocktickers [limit]"
