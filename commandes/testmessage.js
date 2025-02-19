@@ -6,7 +6,7 @@ zokou({
     desc: "Test if bot can send messages",
     categorie: "General",
     public: true,
-}, async (dest, zk) => {
+}, async (dest, zk, commandeOptions) => {
     try {
         await zk.sendMessage(dest.chat, { text: "✅ Bot is working!" });
     } catch (e) {
