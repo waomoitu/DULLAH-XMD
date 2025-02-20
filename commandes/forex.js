@@ -1,5 +1,5 @@
-const { zokou } = require("../framework/zokou");
-const fetch = require("node-fetch");
+const axios = require('axios');
+const { zokou } = require('../framework/zokou');
 
 
 // Helper function to fetch data from API
@@ -21,6 +21,8 @@ zokou({
   category: "forex",
   desc: "Fetches the latest forex news"
 }, async (dest, zk, commandeOptions) => {
+  const { repondre } = commandeOptions;
+  
   const apiUrl = `https://api.polygon.io/v2/reference/news?apiKey=${process.env.POLYGON_API_KEY}`;
   const data = await fetchData(apiUrl);
 
