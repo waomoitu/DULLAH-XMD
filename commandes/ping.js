@@ -21,4 +21,4 @@ zokou({ nomCom: "ping2", reaction: "🧒", nomFichier: __filename }, async (dest
     console.log("Command executed!");
 });
 
-console.log("Test complete");
+console.log("mon test");
