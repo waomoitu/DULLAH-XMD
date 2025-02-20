@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const { zokou } = require("../framework/zokou");
 
-zokou({ nomCom: "ping", reaction: "🧒", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "ping2", reaction: "🧒", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
     console.log("Command received!");
 
     let varmess = `*🤖 Bot is online *🤖 🙏 \n\n 𝐃𝐔𝐋𝐋𝚫𝚮-𝚳𝐃  
