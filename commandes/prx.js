@@ -1,5 +1,5 @@
 const axios = require('axios');
-const { ezra } = require('../framework/zokou');
+const { zokou } = require('../framework/zokou');
 
 zokou({
   nomCom: "currencylist",
