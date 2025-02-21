@@ -13,14 +13,14 @@ zokou({ nomCom: 'quote', categorie: 'Fun' }, async (dest, zk, commandeOptions) =
         .then((response) => response.json())
         .then(async (quote) => {
           repondre(`╔══════════════════════════╗
-║   Dullah-md               ║
+║   Dullah-Xmd               ║
 ╚══════════════════════════╝
 
 🎬 Anime: ${quote.anime}
 👤 Character: ${quote.character}
 💬 Quote: ${quote.quote}
 
-Powered by Boniphace-MD`);
+Powered by Dullah xmd`);
         });
     } catch (e) {
       repondre('Erreur lors de la génération de la citation : ' + e.message);
@@ -40,7 +40,7 @@ Powered by Boniphace-MD`);
 👤 Character: ${quote.character}
 💬 Quote: ${quote.quote}
 
-Powered by Dullah-Md Bot`);
+Powered by Dullah-Xmd`);
         });
     } catch (e) {
       repondre('Erreur lors de la génération de la citation : ' + e.message);
