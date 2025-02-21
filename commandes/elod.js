@@ -32,7 +32,7 @@ zokou({ nomCom: "ping", categorie: "General" }, async (dest, zk, commandeOptions
             contextInfo: {
                 externalAdReply: {
                     title: "🤖 DULLAH-XMD 🤖",
-                    body: `🏓 *Ping:* ${ping}ms\n📅 *Date:* ${date}\n⏰ *Time:* ${time}`,
+                    body: `🏓 *Pong:* ${ping}ms\n📅 *Date:* ${date}\n⏰ *Time:* ${time}`,
                     thumbnailUrl: THUMBNAIL_URL,
                     mediaType: 1,
                     renderSmallThumbnail: true // Small thumbnail rendering
