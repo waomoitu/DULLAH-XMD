@@ -1,7 +1,7 @@
 const { zokou } = require("../framework");
 
 zokou({
-  nomCom: "test",
+  nomCom: "test2",
   categorie: "general",
   desc: "Test message sending",
   execute: async (message) => {
