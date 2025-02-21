@@ -1,3 +1,5 @@
+const { zokou } = require("../framework");
+
 zokou({
   nomCom: "testquoted",
   categorie: "general",
