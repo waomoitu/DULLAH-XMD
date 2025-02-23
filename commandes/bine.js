@@ -138,7 +138,7 @@ zokou({
 });
 
  // command for run js
-ezra({
+zokou({
   'nomCom': "run-js",
   'aliases': ["node", "javascript"],
   'categorie': "script"
