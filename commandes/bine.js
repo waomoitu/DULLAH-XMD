@@ -385,7 +385,7 @@ zokou({
       const imageBuffer = Buffer.from(response.data, 'base64');
 
       // Send the generated image as a message
-      const caption = "> Thank for choosing Lucky Md";
+      const caption = "> Thank for choosing ᴅᴜʟʟᴀʜ-xᴍᴅ";
       await zk.sendMessage(ms, { image: imageBuffer, caption: caption }, { quoted: ms });
     } catch (error) {
       return repondre("An error occurred while processing your request.\n" + error.message);
@@ -439,13 +439,13 @@ zokou({
       // Send image message
       await zk.sendMessage(sender, {
         image: { url: fetchUrl },
-        caption: "> Thank you for choosing Lucky md"
+        caption: "> Thank you for choosing ᴅᴜʟʟᴀʜ-xᴍᴅ"
       }, { quoted: context.ms });
     } else if (/video\/.*/.test(contentType)) {
       // Send video message
       await zk.sendMessage(sender, {
         video: { url: fetchUrl },
-        caption: "> *Thank for choosing Lucky Md*"
+        caption: "> *Thank for choosing ᴅᴜʟʟᴀʜ-xᴍᴅ"
       }, { quoted: context.ms });
     } else if (/text|json/.test(contentType)) {
       try {
@@ -461,7 +461,7 @@ zokou({
       // Send other types of documents
       await zk.sendMessage(sender, {
         document: { url: fetchUrl },
-        caption: "> *Thank you for choosing Lucky Md*"
+        caption: "> *Thank you for choosing ᴅᴜʟʟᴀʜ-xᴍᴅ"
       }, { quoted: context.ms });
     }
   } catch (error) {
