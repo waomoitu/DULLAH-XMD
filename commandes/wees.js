@@ -212,7 +212,7 @@ zokou({
   const { repondre, ms } = commandeOptions;
   
   try {
-    const sentMessage = await zk.sendMessage(dest, { text: "🫣 *LUCKY HAND WE GO...* 🤦" });
+    const sentMessage = await zk.sendMessage(dest, { text: "🫣 *DULLAH XMD HAND WYOU'RE RIGHT...* 🤔" });
     const animations = [
       '8✊️===D', '8=✊️==D', '8==✊️=D', '8===✊️D', '8==✊️=D', '8=✊️==D', 
       '8✊️===D', '8=✊️==D', '8==✊️=D', '8===✊️D', '8==✊️=D', '8=✊️==D', 
