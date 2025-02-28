@@ -38,7 +38,7 @@ zokou({
   const { repondre, ms } = commandeOptions;
   
   try {
-    const sentMessage = await zk.sendMessage(dest, { text: "🫣 *LUCKY HEART YOU'RE RIGHT...* 🤔" });
+    const sentMessage = await zk.sendMessage(dest, { text: "🫣 *DULLAH XMD HEART YOU'RE RIGHT...* 🤔" });
     const animations =  ['💖', '💗', '💕', '❤️', '💛', '💚', '🫀', '💙', '💜', '🖤', '♥️', '🤍', '🤎', '💗', '💞', '💓', '💘', '💝', '♥️', '💟', '🫀', '❤️'];
     for (const animation of animations) {
       await new Promise(resolve => setTimeout(resolve, 1000));
@@ -58,7 +58,7 @@ zokou({
     repondre("❌ *Error!* " + error.message);
   }
 });
-ezra({
+zokou({
   nomCom: "angry",
   categorie: "Dullah-fun",
   reaction: "🥺"
@@ -212,7 +212,7 @@ zokou({
   const { repondre, ms } = commandeOptions;
   
   try {
-    const sentMessage = await zk.sendMessage(dest, { text: "🫣 *DULLAH XMD HAND WYOU'RE RIGHT...* 🤔" });
+    const sentMessage = await zk.sendMessage(dest, { text: "🫣 *DULLAH XMD HAND YOU'RE RIGHT...* 🤔" });
     const animations = [
       '8✊️===D', '8=✊️==D', '8==✊️=D', '8===✊️D', '8==✊️=D', '8=✊️==D', 
       '8✊️===D', '8=✊️==D', '8==✊️=D', '8===✊️D', '8==✊️=D', '8=✊️==D', 
