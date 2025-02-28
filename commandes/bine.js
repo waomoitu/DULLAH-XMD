@@ -2,10 +2,10 @@ const cheerio = require('cheerio');
 const { zokou } = require("../framework/zokou");
 const JavaScriptObfuscator = require("javascript-obfuscator");
 const { c, cpp, node, python, java } = require('compile-run');
-const { dBinary, eBinary } = require("../fredi/binary");
+const { dBinary, eBinary } = require("../framework/binary");
 const { default: axios } = require("axios");
 const { writeFile } = require("fs/promises");
-const { mediafireDl } = require("../fredi/dl/Function");
+const { mediafireDl } = require("../framework/dl/Function");
 
 
  // command for run cc++
