@@ -1,4 +1,11 @@
-
+const cheerio = require('cheerio');
+const { zokou } = require("../framework/zokou");
+const JavaScriptObfuscator = require("javascript-obfuscator");
+const { c, cpp, node, python, java } = require('compile-run');
+const { dBinary, eBinary } = require("../fredi/binary");
+const { default: axios } = require("axios");
+const { writeFile } = require("fs/promises");
+const { mediafireDl } = require("../fredi/dl/Function");
 
 
  // command for run cc++
