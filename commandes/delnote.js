@@ -1,4 +1,4 @@
-const { zokou } = require('../framework/zokou");
+const { note,prifex } = require('../framework/zokou");
 
 module.exports = (Zokou) => {
   // Command: delnote - Deletes a note by ID
