@@ -39,7 +39,7 @@ const date = moment().format('DD/MM/YYYY');
 *GITHUB LINK*
 > https://github.com/abdallahsalimjuma/DULLAH-XMD
 
-*WHATSAPP CHANNEL*
+*CHAT GROUP WHATSAPP*
 > https://chat.whatsapp.com/IdRXU9UcO8K50GPelOyhxh
 
 *FOR MORE INFO TAP ON THE LINK BELOW*
