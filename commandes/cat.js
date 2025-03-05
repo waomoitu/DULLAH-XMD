@@ -1,7 +1,6 @@
 const { zokou } = require("../framework");
 
-zokou(
-  {
+zokou({
     nomCom: "cat",
     categorie: "fun",
     reaction: "🐱",
