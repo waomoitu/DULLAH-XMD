@@ -1,6 +1,6 @@
 const { note,prifex } = require('../framework/zokou");
 
-module.exports = (Zokou) => {
+module.exports = (zokou) => {
   // Command: delnote - Deletes a note by ID
   Zokou({
     nomCom: "delnote",
