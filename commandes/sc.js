@@ -8,7 +8,7 @@ const s = require(__dirname + "/../set");
 const more = String.fromCharCode(8206)
 const readmore = more.repeat(4001)
 
-zokou({ nomCom: "git", categorie: "General" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "sc", categorie: "General" }, async (dest, zk, commandeOptions) => {
     let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
     let { cm } = require(__dirname + "/../framework//zokou");
     var coms = {};
@@ -34,24 +34,24 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-   *DULLAH MD BOT IMPORTANT INFO* 
+   *DULLAH XMD BOT IMPORTANT INFO* 
 ❒───────────────────❒
 *GITHUB LINK*
-> https://github.com/abdallahsalimjuma/Dullah_Md
+> https://github.com/abdallahsalimjuma/DULLAH-XMD
 
 *WHATSAPP CHANNEL*
-> https://whatsapp.com/channel/GufiUEQ7Jj1D2kszcZqOgx
+> https://chat.whatsapp.com/IdRXU9UcO8K50GPelOyhxh
 
 *FOR MORE INFO TAP ON THE LINK BELOW*
-> https://github.com/Dullah-BOT/Dullah_Md
+> https://github.com/abdallahsalimjuma/DULLAH-XMD
 ╭───────────────────❒
 │❒⁠⁠⁠⁠ *RAM* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-│❒⁠⁠⁠⁠ *DEV* : *DULLAH BOT*
+│❒⁠⁠⁠⁠ *DEV* : *DULLAH XMD V2*
 ⁠⁠⁠⁠╰───────────────────❒
   `;
     
 let menuMsg = `
-     DULLAH MD 
+     DULLAH XMD
 
 ❒────────────────────❒`;
 
