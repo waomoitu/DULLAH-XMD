@@ -1,8 +1,8 @@
-const { note,prifex } = require('../framework/zokou");
+const { zokou,prifex } = require('../framework/zokou");
 
 module.exports = (zokou) => {
   // Command: delnote - Deletes a note by ID
-  Zokou({
+  zokou({
     nomCom: "delnote",
     categorie: "notes",
     desc: "Deletes a note from the database.",
@@ -25,7 +25,7 @@ module.exports = (zokou) => {
   });
 
   // Command: delallnote - Deletes all notes
-  Zokou({
+  zokou({
     nomCom: "delallnote",
     categorie: "notes",
     desc: "Deletes all notes from the database.",
@@ -41,7 +41,7 @@ module.exports = (zokou) => {
   });
 
   // Command: allnote - Shows list of all notes
-  Zokou({
+  zokou({
     nomCom: "allnote",
     categorie: "notes",
     desc: "Shows a list of all notes.",
@@ -57,7 +57,7 @@ module.exports = (zokou) => {
   });
 
   // Command: getnote - Retrieves a note by its ID
-  Zokou({
+  zokou({
     nomCom: "getnote",
     categorie: "notes",
     desc: "Retrieves a note by its ID.",
@@ -80,7 +80,7 @@ module.exports = (zokou) => {
   });
 
   // Command: addnote - Adds a new note to the database
-  Zokou({
+  zokou({
     nomCom: "addnote",
     categorie: "notes",
     desc: "Adds a new note to the database.",
@@ -99,7 +99,7 @@ module.exports = (zokou) => {
   });
 
   // Command: note - Main command to manage notes
-  Zokou({
+  zokou({
     nomCom: "note",
     categorie: "notes",
     desc: "Manage your saved notes.",
