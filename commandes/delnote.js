@@ -112,22 +112,22 @@ module.exports = (Zokou) => {
 ┃ Here You Can Store Notes For Later Use
 ┃ *------------------------------------------*
 ┃  ┌┤  *✯---- ADD NEW NOTE ----⦿*
-┃  │✭ *Cmd :* ${prefix}note add 'Your Text'
+┃  │✭ *Commands :* ${prefix}note add 'Your Text'
 ┃  │✭ *Usage :* Save Text in MongoDB Server
 ┃  ╰───────────────────◆
 ┃
 ┃  ┌┤  *✯---- GET ALL NOTES ----⦿*
-┃  │✭ *Cmd :* ${prefix}note all
+┃  │✭ *Commands :* ${prefix}note all
 ┃  │✭ *Usage :* Read/Get All Saved Notes 
 ┃  ╰───────────────────◆
 ┃
 ┃  ┌┤  *✯---- DELETE A NOTE ----⦿*
-┃  │✭ *Cmd :* ${prefix}note del 'note ID'
+┃  │✭ *Commands :* ${prefix}note del 'note ID'
 ┃  │✭ *Usage :* Delete A Single Note By ID 
 ┃  ╰───────────────────◆
 ┃
 ┃  ┌┤  *✯---- DELETE ALL NOTES ----⦿*
-┃  │✭ *Cmd :* ${prefix}note delall
+┃  │✭ *Commands :* ${prefix}note delall
 ┃  │✭ *Usage :* Delete All Saved Notes 
 ┃  ╰───────────────────◆
 ╰━━━━━━━━━━━━━━━━━━━━━━──⊷`;
