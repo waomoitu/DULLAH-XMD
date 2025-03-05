@@ -1,13 +1,10 @@
-const {
-   zokou
-} = require('../framework/zokou");
+const { zokou }  = require('../framework/zokou");
 
 zokou({
    nomCom: "dog",
    categorie: "fun",
    reaction: "🙄",
    desc: "Send videos of randome dogs!
-   filename: __filename,
 },
    async (dest, zk, commandeOptions) => {
       try {
