@@ -1,63 +1,74 @@
-"use strict";
+'use strict';
 
+// Required Modules
 const axios = require('axios');
-const fs = require('fs');
+const cheerio = require('cheerio'); 
 const path = require('path');
+const fs = require('fs');
 
-const commandsBaseURL = 'https://dullah-xmd-commands-phi.vercel.app/'; // URL to fetch commands
-const commandsFolder = path.join(__dirname, 'dullah'); // Folder where commands will be saved
+// Define the URL where the script links are listed
+const webPageUrl = 'https://dullah-xmd-commands-phi.vercel.app/';
 
-// List of command files to fetch
-const commandFiles = [
-    'AI.js', 'GPT.js', 'General.js', 'Mods.js', 'Media_dl.js', 'Group.js', 'Owner.js',
-    'Logo.js', 'Download.js', 'Search.js', 'Stalk.js', 'System.js', 'Settings.js', 
-    'TTS.js', 'Sticker.js', 'Games.js', 'BugMenu.js', 'Convacord.js', 'Convert.js',
-    'Events.js', 'Download2.js', 'List.js', 'Logo2.js', 'Image.js', 'Mods.js', 
-    'Rank.js', 'Anime.js', 'Bugs.js', 'Reaction.js', 'Menu.js', 'Warn.js', 'AudioEdit.js'
+// List of script filenames to fetch dynamically
+const scriptNames = [
+    'AI.js', 'AI2.js', 'GPT.js', 'General.js', 'GroupQuotes.js', 'Lt.js', 'Media_dl.js', 'Mods.js', 'Nokia.js',
+    'accapitalgm.js', 'afk.js', 'ahack.js', 'alive.js', 'anime.js', 'ans.js', 'anti-delete.js', 'anti-spam.js', 
+    'anti-sticker.js', 'antifake.js', 'apk.js', 'audioedit.js', 'bible.js', 'bine.js', 'blocklist.js', 'boom.js', 
+    'bug.js', 'canvascord.js', 'cat.js', 'chanel.js', 'chatbot.js', 'chatpt.js', 'codetest.js', 'conversation.js', 
+    'cricket.js', 'delnote.js', 'deobfuscate.js', 'deploy.js', 'design.js', 'dog.js', 'dullah.js', 'dullaht.js', 
+    'elod.js', 'events.js', 'events2.js', 'fancy.js', 'forward.js', 'fpp.js', 'frnews.js', 'fresavecontact.js', 
+    'friends.js', 'games.js', 'getall.js', 'groupe.js', 'grp-set.js', 'guy.js', 'helper.js', 'hentai.js', 'hentai2.js', 
+    'humidity.js', 'igdl-fb-tk.js', 'img.js', 'lama.js', 'logo.js', 'tyf.js', 'math.js', 'menu.js', 'metal.js', 
+    'mont.js', 'movie.js', 'oogs.js', 'other.js', 'owner1.js', 'pair2.js', 'parole.js', 'pastebin.js', 'pay.js', 
+    'play.js', 'plot.js', 'ponp.js', 'profile.js', 'proprio.js', 'prx.js', 'quote.js', 'reaction.js', 'rpt.js', 
+    'sc.js', 'scan.js', 'set.js', 'solar.js', 'stickcmd.js', 'stickersearch.js', 'style.js', 'swidth.js', 'system.js', 
+    'team.js', 'test.js', 'trt.js', 'tts.js', 'ttt.js', 'twi.js', 'uptime.js', 'vars.js', 'vc_files.js', 'voir.js', 
+    'voit.js', 'wallpaper.js', 'warn.js', 'weather.js', 'weeb.js', 'wees.js', 'whois.js', 'youtube.js', 'zgpt.js'
 ];
 
-// Ensure the `dullah` folder exists
+// Folder where commands will be stored
+const commandsFolder = path.join(__dirname, 'commands');
+
+// Ensure the commands directory exists
 if (!fs.existsSync(commandsFolder)) {
     fs.mkdirSync(commandsFolder, { recursive: true });
 }
 
-async function fetchAndSaveCommands() {
-    for (const commandFile of commandFiles) {
-        try {
-            const commandURL = `${commandsBaseURL}${commandFile}`;
-            console.log(`📥 Fetching: ${commandURL}`);
+// Function to fetch and save script files
+async function fetchAndSaveScript(scriptName) {
+    try {
+        // Construct the full URL for the script
+        const scriptUrl = `${webPageUrl}/${scriptName}`;
 
-            const response = await axios.get(commandURL);
-            const scriptContent = response.data;
+        console.log(`🌍 Fetching: ${scriptUrl}`);
 
-            // Save each command as its own separate JS file in dullah/
-            const commandPath = path.join(commandsFolder, commandFile);
-            fs.writeFileSync(commandPath, scriptContent, 'utf-8');
-            console.log(`✅ ${commandFile} saved in dullah/`);
-        } catch (error) {
-            console.error(`❌ Error fetching ${commandFile}:`, error.message);
-        }
+        // Fetch the script content
+        const scriptResponse = await axios.get(scriptUrl);
+        const scriptContent = scriptResponse.data;
+
+        // Define the local file path to save the script
+        const scriptFilePath = path.join(commandsFolder, scriptName);
+
+        // Save the script file locally
+        fs.writeFileSync(scriptFilePath, scriptContent, 'utf8');
+
+        console.log(`✅ Saved: ${scriptName}`);
+
+    } catch (error) {
+        console.error(`❌ Error fetching ${scriptName}:`, error.message);
+    }
+}
+
+// Function to fetch all scripts
+async function fetchAllScripts() {
+    console.log('🚀 Fetching all commands from the web...');
+    
+    for (const scriptName of scriptNames) {
+        await fetchAndSaveScript(scriptName);
     }
 
-    console.log(`✅ All commands have been fetched and saved!`);
+    console.log('🎉 All scripts fetched and saved successfully!');
 }
 
-// Function to load all commands dynamically
-function loadCommands() {
-    fs.readdirSync(commandsFolder).forEach((file) => {
-        if (file.endsWith('.js')) {
-            try {
-                require(path.join(commandsFolder, file));
-                console.log(`✅ Loaded: ${file}`);
-            } catch (error) {
-                console.error(`❌ Error loading ${file}:`, error.message);
-            }
-        }
-    });
-}
-
-// Start fetching commands and then load them
-fetchAndSaveCommands().then(() => {
-    console.log(`🚀 Loading all commands...`);
-    loadCommands();
-});
+// Execute the script fetching process
+fetchAllScripts();
