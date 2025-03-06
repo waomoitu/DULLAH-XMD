@@ -1,13 +1,13 @@
 'use strict';
 
+// Required Modules
 const axios = require('axios');
-const cheerio = require('cheerio'); 
-const path = require('path');
-const fs = require('fs');
+const cheerio = require('cheerio');
 
-const webPageUrl = 'https://dullah-xmd-commands-phi.vercel.app';
+// Base URL where the scripts are hosted
+const webPageUrl = 'https://dullah-xmd-commands-phi.vercel.app/';
 
-// List of script filenames
+// List of script names to fetch dynamically
 const scriptNames = [
     'AI.js', 'AI2.js', 'GPT.js', 'General.js', 'GroupQuotes.js', 'Lt.js', 'Media_dl.js', 'Mods.js', 'Nokia.js',
     'accapitalgm.js', 'afk.js', 'ahack.js', 'alive.js', 'anime.js', 'ans.js', 'anti-delete.js', 'anti-spam.js', 
@@ -24,32 +24,37 @@ const scriptNames = [
     'voit.js', 'wallpaper.js', 'warn.js', 'weather.js', 'weeb.js', 'wees.js', 'whois.js', 'youtube.js', 'zgpt.js'
 ];
 
-// Folder to store scripts
-const commandsFolder = path.join(__dirname, 'commands');
-if (!fs.existsSync(commandsFolder)) fs.mkdirSync(commandsFolder, { recursive: true });
-
-// Function to fetch and save scripts
-async function fetchAndSaveScript(scriptName) {
+// Function to fetch and execute each script in an isolated scope
+async function fetchAndRunScript(scriptName) {
     try {
-        const scriptUrl = `${webPageUrl.replace(/\/$/, '')}/${scriptName}`; // ✅ FIXED
+        const scriptUrl = `${webPageUrl}/${scriptName}`;
         console.log(`🌍 Fetching: ${scriptUrl}`);
 
         const scriptResponse = await axios.get(scriptUrl);
-        const scriptFilePath = path.join(commandsFolder, scriptName);
-        fs.writeFileSync(scriptFilePath, scriptResponse.data, 'utf8');
+        const scriptContent = scriptResponse.data;
 
-        console.log(`✅ Saved: ${scriptName}`);
+        console.log(`✅ Loaded: ${scriptName}`);
+
+        // Execute the script inside an isolated function scope
+        (function() {
+            eval(scriptContent);
+        })();
+
     } catch (error) {
         console.error(`❌ Error fetching ${scriptName}:`, error.message);
     }
 }
 
-// Fetch all scripts
+// Function to fetch and execute all scripts
 async function fetchAllScripts() {
     console.log('🚀 Fetching all commands from the web...');
-    for (const scriptName of scriptNames) await fetchAndSaveScript(scriptName);
-    console.log('🎉 All scripts fetched and saved successfully!');
+    
+    for (const scriptName of scriptNames) {
+        await fetchAndRunScript(scriptName);
+    }
+
+    console.log('🎉 All scripts executed successfully!');
 }
 
-// Execute
+// Execute the fetch process
 fetchAllScripts();
