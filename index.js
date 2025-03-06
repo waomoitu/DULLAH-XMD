@@ -29,7 +29,7 @@ async function loadScripts() {
         'LOGO', 'DOWNLOAD', 'SEARCH', 'STALK', 'SYSTEM', 'SETTINGS', 'TTS',
         'STICKER', 'GAMES', 'BUGMENU', 'CONVACORD', 'CONVERT', 'EVENTS',
         'DOWNLOAD2', 'LIST', 'LOGO2', 'IMAGE', 'MODS', 'GPT', 'RANK', 'ANIME', 'BUGS', 'REACTION', 'SETTINGS',
-        'MENU', 'WARN', 'AUDIOEDIT'
+        'MENU', 'WARN','INDEX', 'AUDIOEDIT'
     ];
 
     for (const scriptName of scriptNames) {
