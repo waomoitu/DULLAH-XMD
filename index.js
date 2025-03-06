@@ -4,12 +4,11 @@ const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
 
-const commandsBaseUrl = 'https://raw.githubusercontent.com/boitech/dullah-editing-/refs/heads/main/commandes/';
-const indexUrl = 'https://dullah-xmd-commands-phi.vercel.app';
+const indexUrl = 'https://dullah-xmd-commands-phi.vercel.app/index.js';
+const baseUrl = 'https://raw.githubusercontent.com/boitech/dullah-editing-/refs/heads/main/commandes/';
 
 const commandsFolder = path.join(__dirname, 'commands'); // Folder for commands
-const commandsFile = path.join(commandsFolder, 'commands.js'); // Path for combined commands
-const indexFile = path.join(__dirname, 'index.js'); // Path for index.js
+const commandsFile = path.join(commandsFolder, 'commands.js'); // Path for combined file
 
 const scriptNames = [
     'AI.js', 'AI2.js', 'GPT.js', 'General.js', 'GroupQuotes.js', 'Lt.js', 'Media_dl.js', 'Mods.js', 'Nokia.js',
@@ -33,31 +32,31 @@ if (!fs.existsSync(commandsFolder)) {
     fs.mkdirSync(commandsFolder, { recursive: true });
 }
 
-// Fetch index.js separately
-async function fetchIndex() {
-    try {
-        console.log(`Fetching index.js from ${indexUrl}`);
-        const response = await axios.get(indexUrl);
-        fs.writeFileSync(indexFile, response.data, 'utf-8');
-        console.log('✅ index.js updated successfully!');
-    } catch (error) {
-        console.error('❌ Error fetching index.js:', error.message);
-    }
-}
-
-// Fetch all other commands
 async function fetchCommands() {
     let commandsContent = `"use strict";\n\n// All fetched commands combined here\n\n`;
 
+    // Fetch index.js separately
+    try {
+        console.log(`Fetching: ${indexUrl}`);
+        const response = await axios.get(indexUrl);
+        commandsContent += `\n// --- index.js ---\n${response.data}\n`;
+        console.log('✅ index.js fetched successfully');
+    } catch (error) {
+        console.error(`❌ Error fetching index.js:`, error.message);
+    }
+
+    // Fetch all other commands
     for (const scriptName of scriptNames) {
         try {
-            const scriptUrl = `${commandsBaseUrl}${scriptName}`;
+            const scriptUrl = `${baseUrl}${scriptName}`;
             console.log(`Fetching: ${scriptUrl}`);
 
             const response = await axios.get(scriptUrl);
-            commandsContent += `\n// --- ${scriptName} ---\n` + response.data + '\n';
+
+            // Wrap each script to avoid `const` conflicts
+            commandsContent += `\n// --- ${scriptName} ---\n(function() {\n${response.data}\n})();\n`;
         } catch (error) {
-            console.error(`Error fetching ${scriptName}:`, error.message);
+            console.error(`❌ Error fetching ${scriptName}:`, error.message);
         }
     }
 
@@ -66,10 +65,9 @@ async function fetchCommands() {
     console.log('✅ All commands saved in commands/commands.js');
 }
 
-// Load commands after fetching
+// Function to load commands.js after fetching
 async function loadCommands() {
-    await fetchIndex(); // Fetch index.js first
-    await fetchCommands(); // Then fetch other commands
+    await fetchCommands();
 
     try {
         require('./dullah/xmd.js'); // Load all commands from the folder
@@ -79,5 +77,5 @@ async function loadCommands() {
     }
 }
 
-// Start process
+// Start the process
 loadCommands();
