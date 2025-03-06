@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "s": "node index.js", 
-    "bwm": "pm2 start body.js --attach --max-memory-restart 490M",
+    "bwm": "pm2 start index.js --attach --max-memory-restart 490M",
     "c": "tsc"
   },
   "keywords": [
