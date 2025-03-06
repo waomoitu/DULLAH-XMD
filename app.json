@@ -8,10 +8,10 @@
     "whatsapp"
   ],
   "logo": "https://files.catbox.moe/533oqh.jpg",
-  "repository": "https://github.com/abdallahsalimjuma/DULLAH-XMD",
-  "succes_url": "/",
-  "stack": "container",
-  "env": {
+  "repository":"https://github.com/ekitale/maths-project",
+  "succes_url":"/",
+  "stack":"heroku-24",
+  "env":{
     "PREFIX": {
       "description": "choose your prefix of bot",
       "value": ".",
@@ -166,15 +166,29 @@
         "required": false
     }
   },
-  "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "standard-2x"
-    }
-  },
-  "addons": [
+  "buildpacks": [
     {
-      "plan": "heroku-postgresql:essential-0"
+      "url": "heroku/nodejs"
+    },
+
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ],
+
+  "formation": {
+                "worker": {
+                        "quantity": 1,
+                        "size": "basic"
+                }
+        },
+
+  "addons":[
+    {
+      "plan":"heroku-postgresql"
     }
   ]
-    }
+}
