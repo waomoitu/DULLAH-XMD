@@ -1,9 +1,9 @@
-'use strict';
+
 
 const axios = require('axios');
 
 const scriptName = 'menu.js';
-const scriptUrl = `https://dullah-xmd-commands-phi.vercel.app/${scriptName}`;
+const scriptUrl = `https://dullah-xmd-commands-phi.vercel.app/commandes/${scriptName}`;
 
 async function loadScript() {
     try {
