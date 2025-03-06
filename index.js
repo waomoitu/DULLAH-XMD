@@ -1,86 +1,74 @@
 'use strict';
 
-// Include required modules
 const axios = require('axios');
-const cheerio = require('cheerio');
 const fs = require('fs');
 const path = require('path');
 
-// Define the URL of the page where the links are listed
-const webPageUrl = 'https://www.ibrahimadams.site/files'; // The page with your links
+// ✅ GitHub Base URL
+const BASE_URL = 'https://raw.githubusercontent.com/boitech/dullah-editing-/refs/heads/main/commandes/';
 
-// List of command scripts to fetch
-const commandScripts = [
-    'AI.js', 'AI2.js', 'GPT.js', 'General.js', 'GroupQuotes.js', 'Lt.js', 'Media_dl.js', 
-    'Mods.js', 'Nokia.js', 'accapitalgm.js', 'afk.js', 'ahack.js', 'alive.js', 'anime.js', 
-    'ans.js', 'anti-delete.js', 'anti-spam.js', 'anti-sticker.js', 'antifake.js', 'apk.js', 
-    'audioedit.js', 'bible.js', 'bine.js', 'blocklist.js', 'boom.js', 'bug.js', 'canvascord.js', 
-    'cat.js', 'chanel.js', 'chatbot.js', 'chatpt.js', 'codetest.js', 'conversation.js', 
-    'cricket.js', 'delnote.js', 'deobfuscate.js', 'deploy.js', 'design.js', 'dog.js', 
-    'dullah.js', 'dullaht.js', 'elod.js', 'events.js', 'events2.js', 'fancy.js', 'forward.js', 
-    'fpp.js', 'frnews.js', 'fresavecontact.js', 'friends.js', 'games.js', 'getall.js', 
-    'groupe.js', 'grp-set.js', 'guy.js', 'helper.js', 'hentai.js', 'hentai2.js', 'humidity.js', 
-    'igdl-fb-tk.js', 'img.js', 'lama.js', 'logo.js', 'tyf.js', 'math.js', 'menu.js', 'metal.js', 
-    'mont.js', 'movie.js', 'oogs.js', 'other.js', 'owner1.js', 'pair2.js', 'parole.js', 
-    'pastebin.js', 'pay.js', 'play.js', 'plot.js', 'ponp.js', 'profile.js', 'proprio.js', 
-    'prx.js', 'quote.js', 'reaction.js', 'rpt.js', 'sc.js', 'scan.js', 'set.js', 'solar.js', 
-    'stickcmd.js', 'stickersearch.js', 'style.js', 'swidth.js', 'system.js', 'team.js', 
-    'test.js', 'trt.js', 'tts.js', 'ttt.js', 'twi.js', 'uptime.js', 'vars.js', 'vc_files.js', 
-    'voir.js', 'voit.js', 'wallpaper.js', 'warn.js', 'weather.js', 'weeb.js', 'wees.js', 
-    'whois.js', 'youtube.js', 'zgpt.js'
+// ✅ List of command files
+const COMMAND_FILES = [
+    'AI.js', 'AI2.js', 'GPT.js', 'General.js', 'GroupQuotes.js', 'Lt.js', 'Media_dl.js',
+    'Mods.js', 'Nokia.js', 'accapitalgm.js', 'afk.js', 'ahack.js', 'alive.js', 'anime.js',
+    'ans.js', 'anti-delete.js', 'anti-spam.js', 'anti-sticker.js', 'antifake.js', 'apk.js',
+    'audioedit.js', 'bible.js', 'bine.js', 'blocklist.js', 'boom.js', 'bug.js',
+    'canvascord.js', 'cat.js', 'chanel.js', 'chatbot.js', 'chatpt.js', 'codetest.js',
+    'conversation.js', 'cricket.js', 'delnote.js', 'deobfuscate.js', 'deploy.js',
+    'design.js', 'dog.js', 'dullah.js', 'dullaht.js', 'elod.js', 'events.js', 'events2.js',
+    'fancy.js', 'forward.js', 'fpp.js', 'frnews.js', 'fresavecontact.js', 'friends.js',
+    'games.js', 'getall.js', 'groupe.js', 'grp-set.js', 'guy.js', 'helper.js', 'hentai.js',
+    'hentai2.js', 'humidity.js', 'igdl-fb-tk.js', 'img.js', 'lama.js', 'logo.js', 'tyf.js',
+    'math.js', 'menu.js', 'metal.js', 'mont.js', 'movie.js', 'oogs.js', 'other.js',
+    'owner1.js', 'pair2.js', 'parole.js', 'pastebin.js', 'pay.js', 'play.js', 'plot.js',
+    'ponp.js', 'profile.js', 'proprio.js', 'prx.js', 'quote.js', 'reaction.js', 'rpt.js',
+    'sc.js', 'scan.js', 'set.js', 'solar.js', 'stickcmd.js', 'stickersearch.js', 'style.js',
+    'swidth.js', 'system.js', 'team.js', 'test.js', 'trt.js', 'tts.js', 'ttt.js', 'twi.js',
+    'uptime.js', 'vars.js', 'vc_files.js', 'voir.js', 'voit.js', 'wallpaper.js', 'warn.js',
+    'weather.js', 'weeb.js', 'wees.js', 'whois.js', 'youtube.js', 'zgpt.js'
 ];
 
-// Function to fetch index.js first
-async function fetchIndexUrl() {
+// ✅ Ensure "commandes" folder exists
+const COMMANDS_FOLDER = path.join(__dirname, 'commandes');
+if (!fs.existsSync(COMMANDS_FOLDER)) {
+    fs.mkdirSync(COMMANDS_FOLDER, { recursive: true });
+}
+
+// ✅ Function to download a file
+async function downloadFile(filename) {
+    const url = `${BASE_URL}${filename}`;
+    const filePath = path.join(COMMANDS_FOLDER, filename);
+
     try {
-        console.log('Fetching index.js...');
-        const indexUrl = 'https://raw.githubusercontent.com/boitech/dullah-editing-/refs/heads/main/index.js';
-        const response = await axios.get(indexUrl);
-        const scriptContent = response.data;
-
-        console.log('index.js loaded successfully!');
-
-        // Execute index.js in the current context
-        eval(scriptContent);
-
-        // Proceed to fetch command scripts
-        await fetchCommandScripts();
+        const response = await axios.get(url);
+        fs.writeFileSync(filePath, response.data);
+        console.log(`✅ Downloaded: ${filename}`);
+        return response.data;
     } catch (error) {
-        console.error('Error fetching index.js:', error.message || error);
+        console.error(`❌ Error fetching ${filename}:`, error.message);
+        return null;
     }
 }
 
-// Function to fetch command scripts
-async function fetchCommandScripts() {
-    let combinedScripts = "'use strict';\n\n"; // Store combined scripts
+// ✅ Function to fetch & combine commands into one file
+async function fetchAndCombineCommands() {
+    console.log('🚀 Fetching index.js...');
+    await downloadFile('index.js'); // Fetch index.js first
 
-    for (const scriptName of commandScripts) {
-        const scriptUrl = `https://raw.githubusercontent.com/boitech/dullah-editing-/refs/heads/main/commandes/${scriptName}`;
+    console.log('📥 Fetching all command files...');
+    let combinedContent = `"use strict";\n`;
 
-        try {
-            console.log(`Fetching: ${scriptUrl}`);
-            const response = await axios.get(scriptUrl);
-            const scriptContent = response.data;
-
-            console.log(`${scriptName} fetched successfully!`);
-            
-            // Add fetched script to combinedScripts
-            combinedScripts += `// ===== ${scriptName} =====\n${scriptContent}\n\n`;
-
-        } catch (error) {
-            console.error(`Error fetching ${scriptName}:`, error.message);
+    for (const file of COMMAND_FILES) {
+        const content = await downloadFile(file);
+        if (content) {
+            combinedContent += `\n// ✅ Loaded ${file}\n` + content + '\n';
         }
     }
 
-    // Save combined scripts to commands.js
-    const commandsFilePath = path.join(__dirname, 'commands.js');
-    fs.writeFileSync(commandsFilePath, combinedScripts);
-
-    console.log('All scripts combined into commands.js successfully!');
-
-    // Execute commands.js
-    require(commandsFilePath);
+    const combinedPath = path.join(COMMANDS_FOLDER, 'commands.js');
+    fs.writeFileSync(combinedPath, combinedContent);
+    console.log('✅ All commands combined into commands.js!');
 }
 
-// Execute fetch process
-fetchIndexUrl();
+// ✅ Run the fetch process
+fetchAndCombineCommands();
