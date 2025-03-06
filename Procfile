@@ -1,3 +1,3 @@
 
 
-worker: node body.js 
+worker: node index.js 
