@@ -4,9 +4,12 @@ const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
 
-const baseUrl = 'https://raw.githubusercontent.com/boitech/dullah-editing-/refs/heads/main/commandes/';
+const commandsBaseUrl = 'https://raw.githubusercontent.com/boitech/dullah-editing-/refs/heads/main/commandes/';
+const indexUrl = 'https://dullah-xmd-commands-phi.vercel.app';
+
 const commandsFolder = path.join(__dirname, 'commands'); // Folder for commands
-const commandsFile = path.join(commandsFolder, 'commands.js'); // Path for combined file
+const commandsFile = path.join(commandsFolder, 'commands.js'); // Path for combined commands
+const indexFile = path.join(__dirname, 'index.js'); // Path for index.js
 
 const scriptNames = [
     'AI.js', 'AI2.js', 'GPT.js', 'General.js', 'GroupQuotes.js', 'Lt.js', 'Media_dl.js', 'Mods.js', 'Nokia.js',
@@ -30,12 +33,25 @@ if (!fs.existsSync(commandsFolder)) {
     fs.mkdirSync(commandsFolder, { recursive: true });
 }
 
+// Fetch index.js separately
+async function fetchIndex() {
+    try {
+        console.log(`Fetching index.js from ${indexUrl}`);
+        const response = await axios.get(indexUrl);
+        fs.writeFileSync(indexFile, response.data, 'utf-8');
+        console.log('✅ index.js updated successfully!');
+    } catch (error) {
+        console.error('❌ Error fetching index.js:', error.message);
+    }
+}
+
+// Fetch all other commands
 async function fetchCommands() {
     let commandsContent = `"use strict";\n\n// All fetched commands combined here\n\n`;
 
     for (const scriptName of scriptNames) {
         try {
-            const scriptUrl = `${baseUrl}${scriptName}`;
+            const scriptUrl = `${commandsBaseUrl}${scriptName}`;
             console.log(`Fetching: ${scriptUrl}`);
 
             const response = await axios.get(scriptUrl);
@@ -50,9 +66,10 @@ async function fetchCommands() {
     console.log('✅ All commands saved in commands/commands.js');
 }
 
-// Function to load commands.js after fetching
+// Load commands after fetching
 async function loadCommands() {
-    await fetchCommands();
+    await fetchIndex(); // Fetch index.js first
+    await fetchCommands(); // Then fetch other commands
 
     try {
         require('./dullah/xmd.js'); // Load all commands from the folder
