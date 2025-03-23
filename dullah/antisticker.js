@@ -2,7 +2,7 @@
 
 const axios = require('axios');
 
-const scriptName = 'anti-sticker.js';
+const scriptName = 'antisticker.js';
 const scriptUrl = `https://dullah-xmd-commands-phi.vercel.app/${scriptName}`;
 
 async function loadScript() {
