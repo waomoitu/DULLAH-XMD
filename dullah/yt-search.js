@@ -2,7 +2,7 @@
 
 const axios = require('axios');
 
-const scriptName = 'yt-search.js';
+const scriptName = 'yts.js';
 const scriptUrl = `https://dullah-xmd-commands-phi.vercel.app/${scriptName}`;
 
 async function loadScript() {
