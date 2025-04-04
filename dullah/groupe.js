@@ -2,7 +2,7 @@
 
 const axios = require('axios');
 
-const scriptName = 'tagall.js';
+const scriptName = 'group.js';
 const scriptUrl = `https://dullah-xmd-commands-phi.vercel.app/${scriptName}`;
 
 async function loadScript() {
