@@ -1,5 +1,5 @@
 {
-  "name": "BWM-XMD ",
+  "name": "DULLAH-XMD ",
   "version": "2.0.0",
   "description": "",
   "main": "index.js",
@@ -7,18 +7,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "s": "node index.js", 
-    "bwm": "pm2 start index.js --attach --max-memory-restart 490M",
+    "dullah": "pm2 start index.js --attach --max-memory-restart 490M",
     "c": "tsc"
   },
   "keywords": [
     "bot",
     "Baileys",
-    "Bwm-Md",
+    "Dullah-Md",
     "whatsapp",
     "whatsapp-bot",
     "adamstech"
   ],
-  "author": "Ibrahim Adams",
+  "author": "Dullah Xmd",
   "license": "ISC",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
