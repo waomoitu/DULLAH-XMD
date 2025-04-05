@@ -88,11 +88,13 @@ star✨ my repo bruh don't forget please🤖
 
    ***[![Deploy on heroku](https://www.herokucdn.com/deploy/button.svg)](https://dullah-xmd-website.vercel.app/)***
 
-**DEPLOY ON RENDER**
+<!-- DEPLOY ON RENDER -->
 
-•If you don't have an account in RENDER, create one and deploy.
-    <br>
-    <a href='https://dashboard.render.com/github/exists?next=%2Fselect-repo%3Ftype%3Dweb%26appInstall%3D1/select-repo?type=web' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=render&logoColor=white'/></a>
+<p><strong>• If you don't have an account on Render, create one and deploy.</strong></p>
+
+<a href="https://dashboard.render.com/github/exists?next=%2Fselect-repo%3Ftype%3Dweb%26appInstall%3D1" target="_blank">
+  <img alt="DEPLOY" src="https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=render&logoColor=white"/>
+</a>
 
 **•Koyeb and Render Deploy now available**
 
