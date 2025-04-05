@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: dullah-xmd
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node index.js
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
