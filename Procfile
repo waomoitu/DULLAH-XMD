@@ -1,3 +1,0 @@
-
-
-work: node index.js
