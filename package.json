@@ -1,6 +1,6 @@
 
  {
-  "name": "LUCKY_MD",
+  "name": "DULLAH-XMD",
   "version": "2.0.0",
   "description": "",
   "main": "control.js",
@@ -15,12 +15,12 @@
   "keywords": [
     "bot",
     "Baileys",
-    "Lucky-Md",
+    "Dullah-xmd",
     "whatsapp",
     "whatsapp-bot",
-    "frediezra"
+    "dullahxmd"
    ],
-  "author": "frediezra",
+  "author": "dullahxmd",
 "license": "ISC",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
