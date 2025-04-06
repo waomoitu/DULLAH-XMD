@@ -43,7 +43,7 @@
 
 "ANTICALL_MSG": {
       "description": "add your anticall message .this works when anticall is enabled",
-         "value": "call 🤙 declined successfully",
+         "value": "call declined successfully",
       "required": false
     },
 "ANTICALL":
