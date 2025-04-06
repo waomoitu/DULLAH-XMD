@@ -38,9 +38,8 @@
     {
       "description":"Enter yes for your bot to auto react",
       "value":"no",
-      "required":false
-        },
-
+      "required":false 
+    },
 "ANTICALL_MSG": {
       "description": "add your anticall message .this works when anticall is enabled",
          "value": "call declined successfully",
