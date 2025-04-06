@@ -1,5 +1,5 @@
 {
-  "name": "BWM-XMD ",
+  "name": "DULLAH-XMD ",
   "version": "2.0.0",
   "description": "",
   "main": "index.js",
@@ -13,12 +13,12 @@
   "keywords": [
     "bot",
     "Baileys",
-    "Bwm-Md",
+    "Dullah-Md",
     "whatsapp",
     "whatsapp-bot",
-    "adamstech"
+    "dullahxmd"
   ],
-  "author": "Ibrahim Adams",
+  "author": "abdallahsalimjuma",
   "license": "ISC",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
