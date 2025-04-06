@@ -1,6 +1,6 @@
 
 {
-    "name": "LAZACK MD",
+    "name": "DULLAH XMD",
     "version": "2.1.0",
     "description": "Advanced WhatsApp",
     "main": "startup/LazackEngage.js",
@@ -29,16 +29,16 @@
         "MD",
         "baileys-md"
     ],
-    "homepage": "https://github.com/Lazack28/Lazack-Device",
+    "homepage": "https://github.com/abdallahsalimjuma/DULLAH-XMD",
     "author": {
-        "name": "LAZACK"
+        "name": "DULLAH"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Lazack28/Lazack-Device.git"
+        "url": "git+https://abdallahsalimjuma/DULLAH-XMD-Device.git"
     },
     "bugs": {
-        "url": "https://github.com/Lazack28/Lazack-Device/issues"
+        "url": "https://github.com/abdallahsalimjuma/DULLAH-XMD-Device/issues"
     },
     "license": "Apache License 2.0",
     "dependencies": {
