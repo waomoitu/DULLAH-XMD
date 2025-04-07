@@ -42,7 +42,7 @@
     },
    "ANTICALL_MSG": {
       "description": "Type your anticall message to always send when calls are declined.You can as well leave it blank",
-      "value": "no",
+      "value": "",
       "required": false
     },
 "ANTICALL":
