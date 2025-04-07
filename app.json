@@ -40,9 +40,9 @@
       "value":"no",
       "required":false 
     },
-"ANTICALL_MSG": {
-      "description": "add your anticall message .this works when anticall is enabled",
-         "value": "call declined successfully",
+   "ANTICALL_MSG": {
+      "description": "Type your anticall message to always send when calls are declined.You can as well leave it blank",
+      "value": "no",
       "required": false
     },
 "ANTICALL":
