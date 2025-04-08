@@ -136,7 +136,7 @@
       "value": "2"
     },
     "STARTING_BOT_MESSAGE": {
-      "description": "if you don't want startting-bot-message put no else put yes",
+      "description": "if you don't want startting-bot-message put no else put no",
       "required": true,
       "value": "yes"
     },
