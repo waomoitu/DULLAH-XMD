@@ -166,15 +166,15 @@
         "required": false
     }
   },
-"formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "standard-2x"
-    }
-  },
-  "addons": [
+  "buildpacks": [
     {
-      "plan": "heroku-postgresql:essential-0"
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
     }
   ]
 }
