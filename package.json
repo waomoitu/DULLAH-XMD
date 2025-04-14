@@ -1,24 +1,127 @@
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {
-  "name": "DULLAH-XMD ",
+  "name": "dullahxmd",
   "version": "2.0.0",
-  "description": "",
+  "description": "WhatsApp Multi Device Bot",
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "s": "node index.js", 
-    "bwm": "pm2 start index.js --attach --max-memory-restart 490M",
-    "c": "tsc"
+    "start": "node index.js"
   },
   "keywords": [
-    "bot",
-    "Baileys",
-    "Dullah-xmd",
-    "whatsapp",
+    "termux",
+    "whatsapp-openai",
     "whatsapp-bot",
-    "adamstech"
+    "whatsapp-baileys",
+    "baileys-md",
+    "bot-wa",
+    "bot-md",
+    "whatsapp-multi-device"
   ],
-  "author": "abdallahsalimjuma",
+  "author": "dullah",
   "license": "ISC",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
@@ -53,8 +156,8 @@
     "child_process": "^1.0.2",
     "compile-run": "^2.3.4",
     "colors": "^1.4.0",
-    "countries-and-timezones": "^3.6.0",
     "crypto": "^1.0.1",
+    "countries-and-timezones": "^3.6.0",
     "deobfuscator": "^2.4.5",
     "dotenv": "^16.3.1",
     "express": "^4.19.2",
@@ -149,4 +252,4 @@
     "yt-search": "^2.10.4",
     "youtubedl-core": "^4.11.7"
   }
-}
+  }
