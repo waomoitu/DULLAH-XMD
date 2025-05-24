@@ -1,31 +1,33 @@
-function delay(ms) {
-  console.log(`⏱️ delay for ${ms}ms`)
-  return new Promise(resolve => setTimeout(resolve, ms))
-}
+const NEWS_LETTER_JID = "https://chat.whatsapp.com/Dg9rNdDl1HBJ12LnOmH0oD"; // Replace with your real one
+const BOT_NAME = "DULLAH-XMD";
+const DEFAULT_THUMBNAIL = "https://files.catbox.moe/533oqh.jpg";
 
-
-async function loading (dest, zk) {
-var lod = [
-"《 █▒▒▒▒▒▒▒▒▒▒▒》10%",
-"《 ████▒▒▒▒▒▒▒▒》30%",
-"《 ███████▒▒▒▒▒》50%",
-"《 ██████████▒▒》80%",
-"《 ████████████》100%",
-"Loading Completed✅"
-]
-let { key } = await zk.sendMessage(dest, {text: 'Loading Please Wait'})
-
-for (let i = 0; i < lod.length; i++) {
-await zk.sendMessage(dest, {text: lod[i], edit: key });
-}
-}
-
-function react(dest, zk, msg, reaction){
-  zk.sendMessage(dest, {react: {text : reaction, key: msg.key}});
-}
+const createContext = (userJid, options = {}) => ({
+    contextInfo: {
+        mentionedJid: [userJid], // Tag user if needed
+        forwardingScore: 999,
+        isForwarded: true,
+        businessMessageForwardInfo: {
+            businessOwnerJid: NEWS_LETTER_JID, // Helps add verified feel
+        },
+        forwardedNewsletterMessageInfo: {
+            newsletterJid: NEWS_LETTER_JID,
+            newsletterName: options.newsletterName || BOT_NAME,
+            serverMessageId: Math.floor(100000 + Math.random() * 900000)
+        },
+        externalAdReply: {
+            title: options.title || BOT_NAME,
+            body: options.body || "Premium WhatsApp Bot Solution",
+            thumbnailUrl: options.thumbnail || DEFAULT_THUMBNAIL,
+            mediaType: 1,
+            mediaUrl: options.mediaUrl || undefined,
+            sourceUrl: options.sourceUrl || "https://wa.me/254728782591", // link to bot or business
+            showAdAttribution: true,
+            renderLargerThumbnail: false 
+        }
+    }
+});
 
 module.exports = {
-  delay,
-  loading,
-  react
-}
+    createContext
+};
