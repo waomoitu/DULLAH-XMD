@@ -150,6 +150,12 @@ The WhatsApp Bot Dullah MD💫 is released under the [MIT License](https://opens
  <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
 
+## ⚠️ Reminder
+
+- This bot has no issues on the WhatsApp side, and it works perfectly on Heroku—100% safe and not banned. Use it for your WhatsApp activities and other things; it will help you a lot.
+.
+
+
 ★EVERYTHING SAY THANK YOU TO GOD. ©
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
