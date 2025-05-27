@@ -2,12 +2,12 @@
 
 <p align="center">
   <a href="https://youtu.be/F3Cgi8ied1o">
-    <img alt="DRAXE-Ai" height="300" src="https://files.catbox.moe/tmmvub.jpg">
+    <img alt="DULLAH-XMD" height="300" src="https://files.catbox.moe/533oqh.jpg">
   </a>
 </p>
 <div align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Impact&size=50&pause=1000&color=FF5733&center=true&vCenter=true&width=910&height=100&lines=THIS+IS+DRAXEN-Ai;MULTI+DEVICE+WHATSAPP+BOT;CREATED+BY+DRAXEN;PUBLIC+RELEASED+DATE;16/04/2025" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Impact&size=50&pause=1000&color=FF5733&center=true&vCenter=true&width=910&height=100&lines=THIS+IS+DULLAH-XMD;MULTI+DEVICE+WHATSAPP+BOT;CREATED+BY+SIR DULLAH;PUBLIC+RELEASED+DATE;16/04/2025" alt="Typing SVG" />
   </a>
   </p>
 
