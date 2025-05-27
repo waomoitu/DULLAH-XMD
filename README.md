@@ -1,9 +1,14 @@
-<p align="center">
-ᴅᴜʟʟᴀʜ-xᴍᴅ v2
-</p>
+# DRAXEN-Ai
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=DAA520&center=true&width=910&height=100&lines=THANKS FOR CHOOSING +DULLAH;WHATSAPP+BOT+CREATED+BY+DULLAH" alt="Typing SVG"
- /></a>
+<p align="center">
+  <a href="https://youtu.be/F3Cgi8ied1o">
+    <img alt="DRAXE-Ai" height="300" src="https://files.catbox.moe/tmmvub.jpg">
+  </a>
+</p>
+<div align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Impact&size=50&pause=1000&color=FF5733&center=true&vCenter=true&width=910&height=100&lines=THIS+IS+DRAXEN-Ai;MULTI+DEVICE+WHATSAPP+BOT;CREATED+BY+DRAXEN;PUBLIC+RELEASED+DATE;16/04/2025" alt="Typing SVG" />
+  </a>
   </p>
 
 <p align="center">
