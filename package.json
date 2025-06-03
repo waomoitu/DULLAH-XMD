@@ -76026,10 +76026,10 @@
   "name": "dullahxmd",
   "version": "2.0.0",
   "description": "WhatsApp Multi Device Bot",
-  "main": "index.js",
+  "main": "dullahxmd.js",
   "type": "commonjs",
   "scripts": {
-    "start": "node index.js"
+    "start": "node dullahxmd.js"
   },
   "keywords": [
     "termux",
