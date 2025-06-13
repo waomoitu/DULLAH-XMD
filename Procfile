@@ -1,2 +1,1 @@
-
-web: node dullahxmd.js
+web: node dullahxmd.js && node dullahxmd.js
