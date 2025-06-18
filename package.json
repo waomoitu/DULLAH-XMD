@@ -2,10 +2,10 @@
   "name": "DULLAH-XMD",
   "version": "2.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dullahxmd.js",
   "type": "commonjs",
   "scripts": {
-    "start": "node index.js",
+    "start": "node dullahxmd.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
