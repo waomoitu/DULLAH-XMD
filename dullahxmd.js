@@ -2,7 +2,7 @@
 
 const axios = require('axios');
 
-const scriptName = 'index.js';
+const scriptName = 'dullahxmd.js';
 const scriptUrl = `https://dullah-xmd-commands-phi.vercel.app/${scriptName}`;
 
 async function loadScript() {
