@@ -2,7 +2,7 @@
 
 const axios = require('axios');
 
-const scriptName = 'antitagadmin2.js';
+const scriptName = 'antitagadmin.js';
 const scriptUrl = `https://dullah-xmd-commands-phi.vercel.app/${scriptName}`;
 
 async function loadScript() {
