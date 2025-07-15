@@ -14,7 +14,7 @@ module.exports = {
     AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "yes",
     AUTO_DOWNLOAD_STATUS: process.env.AUTO_DOWNLOAD_STATUS || 'no',
     BOT_NAME : process.env.BOT_NAME || 'ᴅᴜʟʟᴀʜ-xᴍᴅ v²',
-    URL : process.env.IMAGE_MENU || 'https://files.catbox.moe/t5fego.jpg',
+    URL : process.env.IMAGE_MENU || 'https://files.catbox.moe/3v4ezj.jpeg',
     MODE: process.env.PUBLIC_MODE || "yes",
     PM_PERMIT: process.env.PM_PERMIT || 'yes',
     HEROKU_APP_NAME : process.env.HEROKU_APP_NAME,
