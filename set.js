@@ -38,6 +38,8 @@ module.exports = {
     AUDIO_REPLY : process.env.AUDIO_REPLY || 'yes',
     AUTO_TAG_STATUS : process.env.AUTO_TAG_STATUS || 'no',
     AUTO_STICKER : process.env.AUTO_STICKER || 'no',
+    WELCOME_MESSAGE : process.env.WELCOME_MESSAGE || 'yes',
+    GOODBYE_MESSAGE : process.env.GOODBYE_MESSAGE || 'yes',
     DATABASE_URL,
     DATABASE: DATABASE_URL === databasePath
         ? "postgresql://postgres:bKlIqoOUWFIHOAhKxRWQtGfKfhGKgmRX@viaduct.proxy.rlwy.net:47738/railway"
