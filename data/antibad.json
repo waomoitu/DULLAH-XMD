@@ -1,3 +1,7 @@
 {
-  "enabled": true
+  "groups": {
+    "1234567890-123456789@g.us": {
+      "active": true
+    }
+  }
 }
