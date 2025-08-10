@@ -1,12 +1,13 @@
 {
   "name": "DULLAH-XMD",
-  "version": "2.0.0",
+  "version": "1.7.7",
   "description": "",
   "main": "dullahxmd.js",
   "type": "commonjs",
   "engines": {
-    "node": "20.19.2",
-    "npm": "10.8.2"
+    "node": ">= 20.x",
+    "npm": ">= 10.x"
+    
   },
   "scripts": {
     "start": "node dullahxmd.js",
