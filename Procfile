@@ -1,1 +1,1 @@
-web: node index.js && node index.js
+web: node dullah.js && node dullah.js
