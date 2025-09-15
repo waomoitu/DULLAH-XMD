@@ -83,7 +83,7 @@
     "hxz-api": "^1.0.1",
     "imagemaker.js": "^2.0.4",
     "imgur": "^2.3.0",
-    "instagram-url-direct": "^1.0.12",
+    "node-webpmux": "^3.1.0",
     "jimp": "^0.16.13",
     "javascript-obfuscator": "^4.1.0",
     "jpeg-js": "^0.4.4",
