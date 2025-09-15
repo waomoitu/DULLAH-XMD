@@ -72,6 +72,7 @@
     "gemini-ai": "^1.1.0",
     "genius-lyrics": "^4.4.3",
     "gist": "^0.2.0",
+    "ruhend-scraper": "^8.3.0",
     "google-it": "^1.6.4",
     "google-play-scraper": "^10.0.0",
     "google-tts-api": "latest",
