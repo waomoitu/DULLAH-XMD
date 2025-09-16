@@ -38,6 +38,7 @@
     "@dark-yasiya/yt-dl.js": "1.0.5",
     "acrcloud": "^1.4.0",
     "adm-zip": "^0.5.16",
+    "phin": "^3.7.1",
     "api-dylux": "^1.8.5",
     "aptoide-scraper": "^1.0.1",
     "awesome-phonenumber": "^6.8.0",
