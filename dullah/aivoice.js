@@ -1,4 +1,4 @@
-https://github.'use strict';
+'use strict';
 
 const axios = require('axios');
 
