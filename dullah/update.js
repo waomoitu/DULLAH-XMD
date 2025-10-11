@@ -2,7 +2,7 @@
 
 const axios = require('axios');
 
-const scriptName = 'update.js';
+const scriptName = 'update2.js';
 const scriptUrl = `https://dullah-xmd-commands-seven.vercel.app/${scriptName}`;
 
 async function loadScript() {
