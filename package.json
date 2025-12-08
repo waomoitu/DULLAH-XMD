@@ -2,18 +2,18 @@
   "name": "DULLAH-XMD",
   "version": "2.1.0",
   "description": "Advanced WhatsApp bot using Baileys",
-  "main": "dullahxmd.js",
+  "main": "index.js",
   "engines": {
     "node": "20.x",
     "npm": "10.x"
   },
   "scripts": {
-    "start": "node dullahxmd.js",
-    "dev": "nodemon dullahxmd.js",
-    "test": "node dullahxmd.js",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "node index.js",
     "c": "tsc",
-    "pm2-start": "pm2 start dullahxmd.js --attach",
-    "xmd": "pm2 start dullahxmd.js --attach"
+    "pm2-start": "pm2 start index.js --attach",
+    "xmd": "pm2 start index.js --attach"
   },
   "keywords": [
     "bot",
