@@ -82,7 +82,7 @@ star✨ my repo bruh don't forget please🤖
 
 
  
-<a href="https://dullah-xmd-scanner-eyb8.onrender.com"><img title="Tap Here Open Session Site" src="https://img.shields.io/badge/PAIRING CODE-h?color=brown&style=for-the-badge&logo=msi" width="100" height="38.45"/></a></p>
+<a href="https://dullah-xmd-scanner-1.onrender.com"><img title="Tap Here Open Session Site" src="https://img.shields.io/badge/PAIRING CODE-h?color=brown&style=for-the-badge&logo=msi" width="100" height="38.45"/></a></p>
 
 
 ## 3.THIRD STEP 
