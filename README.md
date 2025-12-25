@@ -64,7 +64,7 @@ href="https://wa.me/255716945971"><img title="Author" src="https://img.shields.i
 ## HOW TO DEPLOY ᴅᴜʟʟᴀʜ-xᴍᴅ v² 🍃
 
 
-## 1.FIRST STEP 
+## 1.FIRST STEP
 ## FORK MY 💥 REPO
 
 
