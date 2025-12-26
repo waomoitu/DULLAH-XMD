@@ -1,70 +1,76 @@
-const fs = require('fs');
-const path = require('path');
+require("dotenv").config();
+const { Pool } = require("pg");
+const s = require("../set");
 
-// Path to the JSON file storing banned users
-const filePath = path.join(__dirname, '../xmd/banUser.json');
+const proConfig = {
+  connectionString: s.DATABASE_URL || "postgres://db_7xp9_user:6hwmTN7rGPNsjlBEHyX49CXwrG7cDeYi@dpg-cj7ldu5jeehc73b2p7g0-a.oregon-postgres.render.com/db_7xp9",
+  ssl: { rejectUnauthorized: false },
+};
 
-// Load data from JSON file
-function loadBanUserData() {
+const pool = new Pool(proConfig);
+
+// Create table if not exists
+const initTable = async () => {
   try {
-    const data = fs.readFileSync(filePath, 'utf8');
-    return JSON.parse(data);
-  } catch (err) {
-    return {}; // Default if file doesn't exist
+    await pool.query(`
+      CREATE TABLE IF NOT EXISTS banGroup (
+        groupeJid TEXT PRIMARY KEY,
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+      );
+    `);
+    console.log("✅ Table 'banGroup' ready.");
+  } catch (e) {
+    console.error("❌ Table creation error:", e);
   }
-}
-
-// Save data to JSON file
-function saveBanUserData(data) {
-  fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
-}
-
-// Create default file if it doesn't exist
-if (!fs.existsSync(filePath)) {
-  saveBanUserData({});
-}
-
-// Function to add a user to the ban list
-async function addUserToBanList(jid) {
-  try {
-    const data = loadBanUserData();
-    data[jid] = true; // Add the user to the ban list
-    saveBanUserData(data);
-    console.log(`JID ${jid} added to the banned user list.`);
-  } catch (error) {
-    console.error("Error while adding the banned user:", error);
-  }
-}
-
-// Function to check if a user is banned
-async function isUserBanned(jid) {
-  try {
-    const data = loadBanUserData();
-    return data.hasOwnProperty(jid); // Check if the user is banned
-  } catch (error) {
-    console.error("Error while checking if the user is banned:", error);
-    return false;
-  }
-}
-
-// Function to remove a user from the ban list
-async function removeUserFromBanList(jid) {
-  try {
-    const data = loadBanUserData();
-    if (data.hasOwnProperty(jid)) {
-      delete data[jid]; // Remove the user from the ban list
-      saveBanUserData(data);
-      console.log(`JID ${jid} removed from the banned user list.`);
-    } else {
-      console.log(`JID ${jid} is not in the banned user list.`);
-    }
-  } catch (error) {
-    console.error("Error while removing the banned user:", error);
-  }
-}
+};
+initTable();
 
 module.exports = {
-  addUserToBanList,
-  isUserBanned,
-  removeUserFromBanList,
+  addGroupToBanList: async (groupeJid) => {
+    const client = await pool.connect();
+    try {
+      await client.query(
+        "INSERT INTO banGroup (groupeJid) VALUES ($1) ON CONFLICT (groupeJid) DO NOTHING",
+        [groupeJid]
+      );
+      console.log(`✅ ${groupeJid} added to ban list.`);
+    } catch (e) {
+      console.error("❌ Add to ban error:", e);
+    } finally {
+      client.release();
+    }
+  },
+  
+  isGroupBanned: async (groupeJid) => {
+    const client = await pool.connect();
+    try {
+      const res = await client.query(
+        "SELECT EXISTS(SELECT 1 FROM banGroup WHERE groupeJid = $1)",
+        [groupeJid]
+      );
+      return res.rows[0].exists;
+    } catch (e) {
+      console.error("❌ Check ban error:", e);
+      return false;
+    } finally {
+      client.release();
+    }
+  },
+  
+  removeGroupFromBanList: async (groupeJid) => {
+    const client = await pool.connect();
+    try {
+      await client.query(
+        "DELETE FROM banGroup WHERE groupeJid = $1",
+        [groupeJid]
+      );
+      console.log(`✅ ${groupeJid} removed from ban list.`);
+    } catch (e) {
+      console.error("❌ Remove ban error:", e);
+    } finally {
+      client.release();
+    }
+  }
 };
+
+Hii ndio sever ya bdd
