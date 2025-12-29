@@ -9,10 +9,9 @@ const cardSchema = new mongoose.Schema({
   series: { type: String, required: true },
   captcha: { type: String, required: true },
 
-  // 🖼️ Picha ya card
   image: { 
     type: String, 
-    default: "https://i.imgur.com/8QfQZQp.png" // unaweza kubadilisha
+    default: "https://i.imgur.com/8QfQZQp.png"
   }
 });
 
