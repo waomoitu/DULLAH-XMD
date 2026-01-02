@@ -108,6 +108,7 @@
     "moment": "^2.30.1",
     "moment-duration-format": "^2.3.2",
     "mongoose": "^7.4.1",
+    "amethyste-api": "^1.1.4",
     "mumaker": "^2.0.0",
     "node-cache": "^5.1.2",
     "node-cron": "^3.0.3",
