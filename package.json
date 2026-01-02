@@ -58,6 +58,7 @@
     "dotenv": "^16.3.1",
     "express": "^4.19.2",
     "ruhend-scraper": "^8.0.3",
+    "discord.js": "^12.3.1",
     "ffmpeg": "^0.0.4",
     "fg-ig": "^0.0.2",
     "figlet": "^1.7.0",
