@@ -54,7 +54,7 @@
     },
     "AUDIO_REPLY": {
       "description": "Enter yes for your bot to audio reply",
-      "value": "yes",
+      "value": "no",
       "required": false
     },
     "BLOCK_ALL": {
@@ -159,17 +159,17 @@
     },
     "AUTO_REPLY": {
       "description": "Enable or disable auto reply feature (yes/no)",
-      "value": "yes",
+      "value": "no",
       "required": false
     },
     "AUTO_STICKER": {
       "description": "Enable or disable auto sticker reply from local assets (yes/no)",
-      "value": "yes",
+      "value": "no",
       "required": false
     },
     "ANTIBAD": {
       "description": "Enter yes to activate global antibad filter, or no to disable it",
-      "value": "yes",
+      "value": "no",
       "required": false
     },
     "GROUP_ANTILINK": {
