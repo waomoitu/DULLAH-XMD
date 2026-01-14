@@ -149,7 +149,7 @@
     },
     "ANTIDELETE1": {
       "description": "if you want to enable anti delete messages to be sent to your inbox put yes else put no",
-      "value": "no",
+      "value": "yes",
       "required": false
     },
     "AUTO_TAG_STATUS": {
