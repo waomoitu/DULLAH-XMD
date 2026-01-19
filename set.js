@@ -1,5 +1,6 @@
 const fs = require('fs-extra');
 const path = require("path");
+const { Sequelize } = require('sequelize'); 
 
 const databasePath = path.join(__dirname, './database.db');
 const DATABASE_URL = process.env.DATABASE_URL === undefined
