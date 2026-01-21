@@ -1,0 +1,5 @@
+{
+  "status": "on",
+  "action": "warn",
+  "warn_limit": 3
+}
