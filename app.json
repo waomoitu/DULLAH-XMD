@@ -177,8 +177,13 @@
       "value": "yes",
       "required": false
     },
-    "ANTISTATUSMENTION": {
-      "description": "Enable anti status mention feature (yes/no)",
+    "STATUS_MENTIONS": {
+      "description": "Enable hidden mention protection (yes/no)",
+      "value": "yes",
+      "required": false
+    },
+    "ANTISTATUS": {
+      "description": "Enable anti-status mention feature (yes/no)",
       "value": "yes",
       "required": false
     }
