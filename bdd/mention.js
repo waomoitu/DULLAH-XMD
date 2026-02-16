@@ -2,6 +2,7 @@
 require("dotenv").config();
 
 const { Pool } = require("pg");
+const filePath = path.join(__dirname, '../xmd/mention.json');
 
 // Utilisez le module 'set' pour obtenir la valeur de DATABASE_URL depuis vos configurations
 const s = require("../set");
