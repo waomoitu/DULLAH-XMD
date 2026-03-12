@@ -4,7 +4,7 @@
   "keywords": ["bot", "node", "baileys", "whatsapp"],
   "logo": "https://files.catbox.moe/3v4ezj.jpeg",
   "repository": "https://github.com/ekitale/maths-project",
-  "succes_url": "/",
+  "success_url": "/",
   "stack": "heroku-24",
   "env": {
     "PREFIX": {
@@ -13,7 +13,7 @@
       "required": true
     },
     "AUTO_READ_STATUS": {
-      "description": "Your contact status will be read automatically(type yes to active or no to deactive ; don't write in capital letter)",
+      "description": "Your contact status will be read automatically (yes/no)",
       "value": "yes",
       "required": false
     },
@@ -23,7 +23,7 @@
       "required": false
     },
     "CHATBOT": {
-      "description": "Enter yes for your bot to auto reply message when offline",
+      "description": "Enter yes for your bot to auto reply messages when offline",
       "value": "no",
       "required": false
     },
@@ -184,6 +184,16 @@
     },
     "ANTISTATUS": {
       "description": "Enable anti-status mention feature (yes/no)",
+      "value": "yes",
+      "required": false
+    },
+    "ANTI_VOICE": {
+      "description": "Enable AntiVoice to automatically delete voice notes (yes/no)",
+      "value": "yes",
+      "required": false
+    },
+    "ANTI_SPAM": {
+      "description": "Enable AntiSpam to automatically detect and remove spammers (yes/no)",
       "value": "yes",
       "required": false
     }
