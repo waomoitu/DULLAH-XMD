@@ -65,6 +65,7 @@ const config = {
 
     ANTI_VOICE: process.env.ANTI_VOICE || 'yes',
     ANTI_SPAM: process.env.ANTI_SPAM || 'yes',
+    ANTI_REACT: process.env.ANTI_REACT || 'yes',
 
     DATABASE_URL,
     database,
