@@ -62,6 +62,10 @@ const config = {
     WELCOME_MESSAGE: process.env.WELCOME_MESSAGE || 'yes',
     GOODBYE_MESSAGE: process.env.GOODBYE_MESSAGE || 'yes',
     RMBG_KEY: process.env.RMBG_KEY || 'MLt7fM4Sqv63U9FAt6FdPKRL',
+
+    ANTI_VOICE: process.env.ANTI_VOICE || 'yes',
+    ANTI_SPAM: process.env.ANTI_SPAM || 'yes',
+
     DATABASE_URL,
     database,
 };
@@ -74,4 +78,3 @@ fs.watchFile(fichier, () => {
 });
 
 module.exports = config;
-    
