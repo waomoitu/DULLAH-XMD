@@ -1,4 +1,4 @@
 {
-  "enabled": false,
-  "groups": {}
+  "enabled": true,
+  "groups": { "123456789-123456@g.us": true }
 }
