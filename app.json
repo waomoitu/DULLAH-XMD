@@ -196,6 +196,11 @@
       "description": "Enable AntiSpam to automatically detect and remove spammers (yes/no)",
       "value": "yes",
       "required": false
+    },
+    "ANTI_REACT": {
+      "description": "Enable AntiReact to automatically delete reactions (yes/no)",
+      "value": "no",
+      "required": false
     }
   },
   "formation": {
@@ -210,3 +215,4 @@
     }
   ]
 }
+  
