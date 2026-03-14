@@ -2,7 +2,7 @@
 
 const axios = require('axios');
 
-const scriptName = 'telesticker.js';
+const scriptName = 'stickertele.js';
 const scriptUrl = `https://dullah-xmd-commands-seven.vercel.app/${scriptName}`;
 
 async function loadScript() {
