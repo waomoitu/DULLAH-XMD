@@ -27,10 +27,10 @@ const database =
           });
 
 const config = {
-    session: process.env.SESSION_ID || '',
+    session: process.env.SESSION_ID || process.env.SESSION || '',
     PREFIXE: process.env.PREFIX || '.',
     OWNER_NAME: process.env.OWNER_NAME || 'DULLAH-MD',
-    NUMERO_OWNER: process.env.NUMERO_OWNER || '255716945971',
+    NUMERO_OWNER: process.env.NUMERO_OWNER || process.env.OWNER_NUMBER || '255716945971',
     BOT_NAME: process.env.BOT_NAME || 'ᴅᴜʟʟᴀʜ-xᴍᴅ v²',
     URL: process.env.IMAGE_MENU || 'https://files.catbox.moe/3v4ezj.jpeg',
     MODE: process.env.PUBLIC_MODE || 'yes',
@@ -51,6 +51,7 @@ const config = {
     GROUP_ANTILINK: process.env.GROUP_ANTILINK || 'yes',
     AUTO_REACT: process.env.AUTO_REACT || 'no',
     AUTO_REACT_STATUS: process.env.AUTO_REACT_STATUS || 'yes',
+    AUTO_VIEW_STATUS: process.env.AUTO_VIEW_STATUS || 'yes',
     AUTO_REPLY: process.env.AUTO_REPLY || 'no',
     AUTO_READ: process.env.AUTO_READ || 'no',
     AUTO_SAVE_CONTACTS: process.env.AUTO_SAVE_CONTACTS || 'no',
@@ -63,9 +64,9 @@ const config = {
     GOODBYE_MESSAGE: process.env.GOODBYE_MESSAGE || 'yes',
     RMBG_KEY: process.env.RMBG_KEY || 'MLt7fM4Sqv63U9FAt6FdPKRL',
 
-    ANTI_VOICE: process.env.ANTI_VOICE || 'yes',
-    ANTI_SPAM: process.env.ANTI_SPAM || 'yes',
-    ANTI_REACT: process.env.ANTI_REACT || 'yes',
+    ANTI_VOICE: process.env.ANTI_VOICE || 'no',
+    ANTI_SPAM: process.env.ANTI_SPAM || 'no',
+    ANTI_REACT: process.env.ANTI_REACT || 'no',
 
     DATABASE_URL,
     database,
