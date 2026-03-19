@@ -29,6 +29,10 @@ const database =
 const config = {
     session: process.env.SESSION_ID || process.env.SESSION || '',
     PREFIXE: process.env.PREFIX || '.',
+
+    API: process.env.API_URL || 'https://api.example.com',
+    SIPUTZX: process.env.SIPUTZX || 'https://api.example.com',
+
     OWNER_NAME: process.env.OWNER_NAME || 'DULLAH-MD',
     NUMERO_OWNER: process.env.NUMERO_OWNER || process.env.OWNER_NUMBER || '255716945971',
     BOT_NAME: process.env.BOT_NAME || 'ᴅᴜʟʟᴀʜ-xᴍᴅ v²',
