@@ -59,6 +59,8 @@
     "crypto": "^1.0.1",
     "deobfuscator": "^2.4.5",
     "discord-giveaways": "^4.2.1",
+    "sequelize": "^6.37.5",
+    "sqlite3": "^5.1.7",
     "discord.js": "^12.3.1",
     "dotenv": "^16.3.1",
     "express": "^4.19.2",
