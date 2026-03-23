@@ -50,6 +50,7 @@
     "cheerio": "^1.0.0-rc.12",
     "chess.js": "*",
     "child_process": "^1.0.2",
+    "openai": "^4.13.0",
     "colors": "^1.4.0",
     "compile-run": "^2.3.4",
     "countries-and-timezones": "^3.6.0",
