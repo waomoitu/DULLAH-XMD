@@ -2,7 +2,7 @@
 
 const axios = require('axios');
 
-const scriptName = 'antigroupmention.js';
+const scriptName = 'antistatusmention.js';
 const scriptUrl = `https://dullah-xmd-commands-seven.vercel.app/${scriptName}`;
 
 async function loadScript() {
