@@ -31,12 +31,15 @@ const config = {
     PREFIXE: process.env.PREFIX || '.',
 
     API: process.env.API_URL || 'https://api.akuari.my.id',
-SIPUTZX: process.env.SIPUTZX || 'https://api.akuari.my.id',
+    SIPUTZX: process.env.SIPUTZX || 'https://api.akuari.my.id',
 
     OWNER_NAME: process.env.OWNER_NAME || 'DULLAH-MD',
     NUMERO_OWNER: process.env.NUMERO_OWNER || process.env.OWNER_NUMBER || '255716945971',
     BOT_NAME: process.env.BOT_NAME || 'ᴅᴜʟʟᴀʜ-xᴍᴅ v²',
     URL: process.env.IMAGE_MENU || 'https://files.catbox.moe/3v4ezj.jpeg',
+
+    BOT_MENU_LINKS: process.env.BOT_MENU_LINKS || '',
+
     MODE: process.env.PUBLIC_MODE || 'yes',
     PM_PERMIT: process.env.PM_PERMIT || 'yes',
     AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || 'yes',
