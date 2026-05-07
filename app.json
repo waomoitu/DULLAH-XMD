@@ -144,7 +144,7 @@
     },
     "AUTO_TAG_STATUS": {
       "description": "Enable auto tag in status (yes/no)",
-      "value": "yes",
+      "value": "no",
       "required": false
     },
     "AUTO_REPLY": {
@@ -169,22 +169,22 @@
     },
     "WELCOME_MESSAGE": {
       "description": "Enable welcome message (yes/no)",
-      "value": "yes",
+      "value": "no",
       "required": false
     },
     "GOODBYE_MESSAGE": {
       "description": "Enable goodbye message (yes/no)",
-      "value": "yes",
+      "value": "no",
       "required": false
     },
     "STATUS_MENTIONS": {
       "description": "Enable hidden mention protection (yes/no)",
-      "value": "yes",
+      "value": "no",
       "required": false
     },
     "ANTISTATUS": {
       "description": "Enable anti-status mention feature (yes/no)",
-      "value": "yes",
+      "value": "no",
       "required": false
     },
     "ANTI_VOICE": {
@@ -194,7 +194,7 @@
     },
     "ANTI_SPAM": {
       "description": "Enable AntiSpam to automatically detect and remove spammers (yes/no)",
-      "value": "yes",
+      "value": "no",
       "required": false
     },
     "ANTI_REACT": {
