@@ -49,19 +49,9 @@ href="https://wa.me/255716945971"><img title="Author" src="https://img.shields.i
 - <a href="https://chat.whatsapp.com/CP2BirU5pBj04cXXgEbfuv"><img title="Author" src="https://img.shields.io/badge/ON Wa Group-green?style=for-the-badge&logo=watsapp"></a>
 - <a href="https://youtube.com/@herokuplatform?si=kl684fKNUpxTFig2"><img title="Author" src="https://img.shields.io/badge/ON YouTube-darkred?style=for-the-badge&logo=youtube"></a>
 
-    
-
- 
-
-
-
 ---
 
-
-
-
-
-## HOW TO DEPLOY ᴅᴜʟʟᴀʜ-xᴍᴅ v² 🍃
+## HOW TO DEPLOY DULLAH XMD v² 🍃
 
 
 ## 1.FIRST STEP
@@ -78,11 +68,11 @@ star✨ my repo bruh don't forget please🤖
 
  GET SESSION ID BY
  
-<a href="https://dullah-4eba66269e1f.herokuapp.com/qr"><img title="Tap Here Open Session Site" src="https://img.shields.io/badge/QR CODE-h?color=brown&style=for-the-badge&logo=msi" width="100" height="38.45"/></a></p>
+<a href="https://dullahxmd-82c75dade207.herokuapp.com/qr"><img title="Tap Here Open Session Site" src="https://img.shields.io/badge/QR CODE-h?color=brown&style=for-the-badge&logo=msi" width="100" height="38.45"/></a></p>
 
 
  
-<a href="https://dullah-4eba66269e1f.herokuapp.com/"><img title="Tap Here Open Session Site" src="https://img.shields.io/badge/PAIRING CODE-h?color=brown&style=for-the-badge&logo=msi" width="100" height="38.45"/></a></p>
+<a href="https://dullahxmd-82c75dade207.herokuapp.com/"><img title="Tap Here Open Session Site" src="https://img.shields.io/badge/PAIRING CODE-h?color=brown&style=for-the-badge&logo=msi" width="100" height="38.45"/></a></p>
 
 
 ## 3.THIRD STEP 
