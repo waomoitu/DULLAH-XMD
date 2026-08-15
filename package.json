@@ -34,7 +34,7 @@
     "@shineiichijo/marika": "^2.0.6",
     "@types/node": "^18.0.6",
     "@vitalets/google-translate-api": "^9.2.0",
-    "@whiskeysockets/baileys": "npm:xmd-baileys@"
+    "@whiskeysockets/baileys": "npm:xmd-baileys@",
     "@xaviabot/fb-downloader": "^1.0.14",
     "@xct007/tiktok-scraper": "^1.0.2",
     "acrcloud": "^1.4.0",
