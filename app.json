@@ -3,7 +3,7 @@
   "description": "This BOT was developed by dullah.",
   "keywords": ["bot", "node", "baileys", "whatsapp"],
   "logo": "https://files.catbox.moe/3v4ezj.jpeg",
-  "repository": "https://github.com/ekitale/maths-project",
+  "repository": "https://github.com/abdallahsalimjuma/DULLAH-XMD",
   "success_url": "/",
   "stack": "heroku-24",
   "env": {
